@@ -1,0 +1,73 @@
+Més preguntes
+-------------
+
+Agrupades
+~~~~~~~~~
+
+Grafs
+.....
+	 
+.. moodle:question:: Recorreguts  d'un graf
+   :type: multichoice
+
+   Donat el graf següent:
+   
+   .. image:: graf.svg
+      :width: 50%
+      :align: center
+   
+   Indiqueu quines de les següents afirmacions són certes:
+   
+
+   .. moodle:answer:: -50
+      :feedback: Fals, No és un recorregut en amplada. És un recorregut en primera profunditat.
+
+      Un recorregut de nodes en amplada a partir del node *E* és *EBCFIHGDA*.
+
+   .. moodle:answer:: 33.33333333
+
+      Un recorregut de nodes en primera profunditat a partir del node *E* és *EDGHIFCBA*.
+
+   .. moodle:answer:: 33.33333333
+
+      Un recorregut de nodes en amplada a partir del node *G* és *GDHEAIBFC*.
+
+
+   .. moodle:answer:: 33.33333333
+
+      Un recorregut de nodes en amplada a partir del node *E* és *EFBDHICAG*.
+
+Recursivitat
+............
+
+.. moodle:question:: recursivitat
+   :type: multichoice
+
+   Disposem de la següent funció recursiva:
+   
+   .. literalinclude:: divi.py
+       :language: python
+   
+   Indiqueu quines de les següents afirmacions són certes:
+   
+   .. moodle:answer:: 50
+
+      La funció :math:`f(a, b)` amb :math:`a` i :math:`b` com valors enters, acaba calculant una parella de valors :math:`(q, r)` tals que :math:`a = b \times q + r` si :math:`a\ge 0` i :math:`b\gt 0`.
+   
+   .. moodle:answer:: -50
+      :feedback: La funció no acaba si b és zero o  :math:`a\ge b` i :math:`b\lt 0` 
+
+      La funció :math:`f(a, b)` amb :math:`a` i :math:`b` com valors enters, acaba calculant una parella de valors :math:`(q, r)` tals que :math:`a = b \times q + r` si :math:`a > b` i :math:`b\ge 0`.
+   
+   .. moodle:answer:: 50
+
+      La funció :math:`f(a, b)`  amb :math:`a` i :math:`b` com valors enters, acaba calculant una parella de valors :math:`(q, r)` tals que :math:`a = b \times q + r` si :math:`a < b` per qualsevol valor de :math:`b`.
+   
+   .. moodle:answer:: -50
+      :feedback: Fals. En valors negatius, *f* no acaba.
+
+      La funció :math:`f(a, b)` acaba calculant una parella de valors :math:`(q, r)` tals que :math:`a = b \times q + r` si per qualsevol valor enter d':math:`a` i :math:`b` es cumpleix :math:`a = b`.
+   
+
+.. Pygame
+

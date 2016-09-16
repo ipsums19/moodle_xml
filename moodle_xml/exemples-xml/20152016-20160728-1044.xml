@@ -1,0 +1,2480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Exemple</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686073  -->
+  <question type="multichoice">
+    <name>
+      <text>Capicua</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donada la funció recursiva següent:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="k">def</span> <span class="nf">capicua</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">EXP</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">capicua</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">r</span>
+</pre>
+</div>
+</div>
+<p>on <tt class="docutils literal"><span class="pre">EXP</span></tt> representa una expressió desconeguda. Quines de les afirmacions següents són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>Si substituïm <tt class="docutils literal"><span class="pre">EXP</span></tt> per l’expressió <tt class="docutils literal"><span class="pre">len(s)</span> <span class="pre">==</span> <span class="pre">0</span></tt>, la funció no acaba mai.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Si substituïm <tt class="docutils literal"><span class="pre">EXP</span></tt> per l’expressió <tt class="docutils literal"><span class="pre">len(s)</span> <span class="pre">==</span> <span class="pre">0</span></tt>, la funció acaba sempre i retorna <tt class="docutils literal"><span class="pre">True</span></tt> si l’<em>string</em> <tt class="docutils literal"><span class="pre">s</span></tt> és capicua i <tt class="docutils literal"><span class="pre">False</span></tt> altrament.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>La funció <tt class="docutils literal"><span class="pre">capicua</span></tt> no acaba mai perquè a la crida recursiva les dades no es redueixen prou, independentment de quina sigui l’expressió <tt class="docutils literal"><span class="pre">EXP</span></tt>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>La funció <tt class="docutils literal"><span class="pre">capicua</span></tt> és incorrecta perquè no es pot cridar una funció recursiva en una expressió booleana, independentment de quina sigui l’expressió <tt class="docutils literal"><span class="pre">EXP</span></tt>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 P Reavaluació</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686096  -->
+  <question type="multichoice">
+    <name>
+      <text>Classe quadrat</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Disposem de l'especificació de la classe <a class="reference external" title="(in Informàtica v2015/2016)" href="http://gie.lsi.upc.edu/inf/temes/classes/Classe_quadrat.html#quadrat.quadrat"><tt class="xref py py-class docutils literal"><span class="pre">quadrat</span></tt></a>. En el shell de python hem executat les sentències següents:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">quadrat</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">punt2D<br /></span>&gt;&gt;&gt; p1 = punt2D.punt2D (3, 4)<br />&gt;&gt;&gt; q1 = quadrat.quadrat(p1, 8)<br />&gt;&gt;&gt; q2 = quadrat.quadrat((3, 4),8)<br />&gt;&gt;&gt; q3 = q1<br />&gt;&gt;&gt; q4 = quadrat.quadrat(q3.vèrtex, q3.mida)
+</pre>
+</div>
+</div>
+<p>indiqueu quines de les següents afirmacions són certes:</p>]]></text>
+<file name="quadrat.py" path="/" encoding="base64">ZnJvbSBjb3B5IGltcG9ydCBjb3B5CmNsYXNzIHF1YWRyYXQ6CgogICAgZGVmIF9faW5pdF9fKHNlbGYsIHYsIG0pOgogICAgICAgICIiIgogICAgICAgIENvbnN0cnVjdG9yYTogaW5pY2lhbGl0emEgZWxzIGF0cmlidXRzIGBgdmVydGV4YGAgaSBgYG1pZGFgYAogICAgICAgIGRlIGwnb2JqZWN0ZSBgYHNlbGZgYCBhbWIgZWxzIHZhbG9ycyBkZSBgYHZgYCAocHVudDJEKSBpIGBgbWBgCiAgICAgICAgKG5vbWJyZSkgcmVzcGVjdGl2YW1lbnQuCiAgICAgICAgIiIiCiAgICAgICAgc2VsZi52w6hydGV4ID0gdgogICAgICAgIHNlbGYubWlkYSA9IG0KCiAgICBkZWYgX19zdHJfXyhzZWxmKToKICAgICAgICAiIiIKICAgICAgICBSZXRvcm5hIHVuIHN0cmluZyBlbiBmb3JtYXQ6ICdxdWFkcmF0KHYsIG0pJyBvbgoKICAgICAgICBgYHZgYCDDqXMgZWwgdmFsb3IgZGUgbCdhdHJpYnV0IGBgdsOocnRleGBgLCBpCiAgICAgICAgYGBtYGAgw6lzIGVsIHZhbG9yIGRlIGwnYXRyaWJ1dCBgYG1pZGFgYC4KCiAgICAgICAgUGVyIGV4ZW1wbGU6CgogICAgICAgID4+PiBmcm9tIHB1bnQyRCBpbXBvcnQgcHVudDJECgogICAgICAgID4+PiBwID0gcHVudDJEKDMsIDQpCiAgICAgICAgPj4+IHEgPSBxdWFkcmF0KHAsIDUpCiAgICAgICAgPj4+IHN0cihxKQogICAgICAgICdxdWFkcmF0KHB1bnQyRCgzLCA0KSwgNSknCiAgICAgICAgIiIiCiAgICAgICAgcmV0dXJuICdxdWFkcmF0KCcrc3RyKHNlbGYudsOocnRleCkgKycsICcrc3RyKHNlbGYubWlkYSkrJyknCgogICAgZGVmIHTDqV9kaW5zKHNlbGYsIHApIDoKICAgICAgICAiIiIKICAgICAgICBSZXRvcm5hIFRydWUgc2kgZWwgcHVudDJEIHAgw6lzIGludGVyaW9yIGFsIHF1YWRyYXQgc2VsZiBpIEZhbHNlCiAgICAgICAgYWx0cmFtZW50LgoKICAgICAgICBQZXIgZXhlbXBsZToKCiAgICAgICAgPj4+IGZyb20gcHVudDJEIGltcG9ydCBwdW50MkQKCiAgICAgICAgPj4+IHAxID0gcHVudDJEKDAsIDApCiAgICAgICAgPj4+IHEgPSBxdWFkcmF0KHAxLCAxMCkKICAgICAgICA+Pj4gcDIgPSBwdW50MkQoNSwgNSkKICAgICAgICA+Pj4gcS50w6lfZGlucyhwMikKICAgICAgICBUcnVlCiAgICAgICAgPj4+IHAzID0gcHVudDJEKC0xLCAtMSkKICAgICAgICA+Pj4gcS50w6lfZGlucyhwMykKICAgICAgICBGYWxzZQogICAgICAgICIiIgogICAgICAgIHJldHVybiBzZWxmLnbDqHJ0ZXgueCA8PSBwLnggPD0gc2VsZi52w6hydGV4LnggK3NlbGYubWlkYSBhbmQgc2VsZi52w6hydGV4LnkgPD0gcC55IDw9IHNlbGYudsOocnRleC55ICtzZWxmLm1pZGEgCgogICAgZGVmIGPDsnBpYShzZWxmLCBhbHRyZV9xdWFkcmF0KSA6CiAgICAgICAgc2VsZi5taWRhID0gYWx0cmVfcXVhZHJhdC5taWRhCiAgICAgICAgc2VsZi52w6hydGV4ID0gY29weShhbHRyZV9xdWFkcmF0LnbDqHJ0ZXgpCg==</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>q1 i q2 són dues instàncies de la classe quadrat amb el mateix valor: el mateix vèrtex i la mateixa mida</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>És Fals. q2 no és una instància a la classe quadrat correcta, ja que el seu atribut vèrtex és un tuple en lloc d'una instància de la classe punt2D</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>q1 i q3 són àlies</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>q1 i q4 són àlies</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>És fals. q1 i q4 són dues instàncies de la classe quadrat amb el mateix valor (el mateix vèrtex i la mateixa mida) però no són àlies.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>q1 i q4 són dues instàncies de la classe quadrat amb el mateix valor: el mateix vèrtex i la mateixa mida.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 P Final</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686090  -->
+  <question type="multichoice">
+    <name>
+      <text>Construir una imatge</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es vol crear una instància a la classe Surface de pygame que representi la figura adjunta:</p>
+<p><img src="@@PLUGINFILE@@/dibu.png" alt="dibuix pregunta Construir una imatge" height="80" width="125" /></p>
+<p>La instància ha de ser de 125x 80, amb fons blanc pur i tres ratlles blaves de 25 d'amplada i 80 d'alçada. Es proposa el següent tros de codi per crear-la.</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre>&gt;&gt;&gt; import pygame<br />&gt;&gt;&gt; s = pygame.Surface((125, 80))<br />&gt;&gt;&gt; s.fill((255, 255, 255))<br />&gt;&gt;&gt; s1 = pygame.Surface((25, 80))<br />&gt;&gt;&gt; s1.fill((0, 0, 255))<br />&gt;&gt;&gt; s1.blit(s, (0, 0))<br />&gt;&gt;&gt; s1.blit(s, (50, 0))<br />&gt;&gt;&gt; s1.blit(s, (100, 0))
+</pre>
+</div>
+</div>
+<p>Quines de les afirmacions següents són certes?</p>]]></text>
+<file name="dibu.png" path="/" encoding="base64">iVBORw0KGgoAAAANSUhEUgAAAH0AAABQCAIAAAC70O2aAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AUfCwgI0F2UQAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAACPSURBVHja7dCBCQAgDAPB1P13rksUpHI/QAhXSWeoHltKVf5+daIXcefOXdy5izt3cecu7tzFnTt3cecu7tzFnbu4cxd37tzFnbu4cxd37uLOXdy5izt37uLOXdy5izt3cecu7ty5izt3cecu7tzFnbu4c+cu7tzFnbu4cxd37uLOXdy5cxd37uLOXdx3dQH6OgWfvImFcQAAAABJRU5ErkJggg==</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>No s'obtindrà el resultat desitjat perquè ni <em>s1</em> ni<em> s</em> són Sprites</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, no cal sprites per crear la imatge</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>No s'obtindrà el resultat esperat perquè el fons és blau i les ratlles blanques (és a dir que es veurà d'esquerra a dreta  blanc/blau/blanc/blau/blanc.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La instància no és correcta perquè les crides a <em>blit</em> són incorrectes, cal enganxar <em>s1</em> sobre <em>s</em> i no al revés.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>La instància no és correcta perquè primer cal cridar a <em>pygame.image.load()</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, <em>pygame.image.load()</em> es crida quan hem de crear una imatge a partir d'un fitxer imatge. Aquí  no es necessita cap fitxer per crear-les.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Exemple</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686074  -->
+  <question type="multichoice">
+    <name>
+      <text>Elimina els entrebancs</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es vol dissenyar un passatemps que mostra en pantalla una àrea gràfica en la que hi ha tot un conjunt de blocs rectangulars fixes i en la que es mou una pilota. Cada cop que la pilota toca un bloc aquest desapareix. Quan la pilota xoca contra els límits de l’àrea gràfica, aquesta rebota de manera que canvia de direcció, però no el mòdul de la velocitat. Es disposa de la següent classe en el fitxer <tt class="docutils literal"><span class="pre">bloc.py</span></tt>.</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="kn">import</span> <span class="nn">pygame</span>
+
+<span class="k">class</span> <span class="nc">Bloc</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">posicio</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)):</span> 
+        <span class="nb">super</span><span class="p">(</span><span class="n">Bloc</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">()</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Surface</span><span class="p">((</span><span class="mi">80</span><span class="p">,</span> <span class="mi">80</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rect</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Rect</span><span class="p">((</span><span class="n">posicio</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">posicio</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>  <span class="mi">80</span><span class="p">,</span> <span class="mi">80</span><span class="p">))</span>
+</pre>
+</div>
+</div>
+<p>Quines de les afirmacions següents són certes?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>La classe <tt class="docutils literal"><span class="pre">Bloc</span></tt> és subclasse de <a class="reference external" title="(in Pygame v1.9.2)" href="http://www.pygame.org/docs/ref/sprite.html#pygame.sprite.Sprite"><tt class="xref py py-class docutils literal"><span class="pre">pygame.sprite.Sprite</span></tt></a> i per tant, direm que les instàncies de classe bloc són <em>sprites</em>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>No té cap sentit fer servir la implementació donada de <tt class="docutils literal"><span class="pre">Bloc</span></tt>, ja que els blocs no es mouen i per tant, no poden ser <em>sprites</em>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, normalment els <em>sprites</em> es mouen o canvien la seva imatge, però no és imprescindible.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Si la pilota és un <em>sprite</em> i els blocs pertanyen a un mateix grup d’<em>sprites</em> és possible detectar totes les col·lisions entre la pilota i els blocs cridant només una funció del modul <a class="reference external" title="(in Pygame v1.9.2)" href="http://www.pygame.org/docs/ref/sprite.html#module-pygame.sprite"><tt class="xref py py-mod docutils literal"><span class="pre">pygame.sprite</span></tt></a>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Cert, cridant la funció <tt class="docutils literal"><span class="pre">pygame.sprite.spritecollide</span></tt>.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>És impossible fer el programa demanat amb la llibreria <a class="reference external" href="http://pygame.org/docs/">pygame</a> sense fer servir <em>sprites</em>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, pot ser més laboriós, però no impossible.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Torn 1</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686078  -->
+  <question type="multichoice">
+    <name>
+      <text>Funció potència?</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Disposem de la següent funció recursiva:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c"># cas base </span>
+        <span class="n">r</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>       <span class="c"># cas no base</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span><span class="p">,</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">*</span> <span class="n">x</span>
+    <span class="k">return</span> <span class="n">r</span>
+</pre></div>
+</div>
+<p>Indiqueu quines de les següents afirmacions són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="50" format="html">
+      <text><![CDATA[La funció calcula <span class="math">\(x^n\)</span> si <em>n</em> és un enter positiu.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[La crida <em>f(2, 6)</em> provoca exactament dues crides recursives.]]></text>
+      <feedback format="html">
+        <text>Fals, fa més de dues crides recursives.</text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[La crida <em>f(-5, -2)</em> provocarà que no s&#8217;arribi mai al cas base
+de la recursivitat.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text>El segon paràmetre de la funció va creixent a cada crida
+recursiva.</text>
+      <feedback format="html">
+        <text>Fals, decreix.</text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Exemple</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686072  -->
+  <question type="multichoice">
+    <name>
+      <text>Grafs i Recorregut en amplada</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el graf següent:</p>
+<div class="align-center" align="center"><img src="@@PLUGINFILE@@/graf.svg" width="314" height="223" /></div>
+<p>Indiqueu quines de les següents afirmacions són certes:</p>]]></text>
+<file name="graf.svg" path="/" encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iNDI4LjY5MjQxIgogICBoZWlnaHQ9IjI1Ni44NjU2NiIKICAgaWQ9InN2ZzIiCiAgIHZlcnNpb249IjEuMSIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMC40OC40IHI5OTM5IgogICBzb2RpcG9kaTpkb2NuYW1lPSJncmFmMS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjkwODM2NjMzIgogICAgIGlua3NjYXBlOmN4PSIxMzguNjU5MzQiCiAgICAgaW5rc2NhcGU6Y3k9IjIwMy4xMTIzOSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0iY2FwYTEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOm9iamVjdC1wYXRocz0idHJ1ZSIKICAgICBpbmtzY2FwZTpzbmFwLW5vZGVzPSJmYWxzZSIKICAgICBpbmtzY2FwZTpzbmFwLWdsb2JhbD0iZmFsc2UiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSI5OTYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iODc4IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIxMTUiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9IjQ1IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjAiCiAgICAgZml0LW1hcmdpbi10b3A9IjAuMiIKICAgICBmaXQtbWFyZ2luLWxlZnQ9IjAiCiAgICAgZml0LW1hcmdpbi1yaWdodD0iMCIKICAgICBmaXQtbWFyZ2luLWJvdHRvbT0iMC4yIgogICAgIHVuaXRzPSJjbSIgLz4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZwogICAgIGlua3NjYXBlOmxhYmVsPSJDYXBhIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0iY2FwYTEiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI1MS42Njk5NCwtMjI5LjcxMzQxKSI+CiAgICA8cGF0aAogICAgICAgc3R5bGU9ImZpbGw6I2ZmYjM4MDtmaWxsLW9wYWNpdHk6MTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowIgogICAgICAgZD0ibSAyNjcuMDIwNDEsMzM4LjU5NTcyIDEyNC42NDA5LC0xNi41OTYyNCIKICAgICAgIGlkPSJwYXRoMzc3NSIKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBzb2RpcG9kaTpub2RldHlwZXM9ImNjIiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCIKICAgICAgIGQ9Ik0gMzkxLjEwMjExLDMyMy4wODc2NSA1MDEuOTUwNDUsMjU4Ljg4NjI5IgogICAgICAgaWQ9InBhdGgzNzc3IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIHNvZGlwb2RpOm5vZGV0eXBlcz0iY2MiIC8+CiAgICA8cGF0aAogICAgICAgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowIgogICAgICAgZD0ibSAyNjcuMDIwNDEsMzM4LjU5NTcyIDUwLjI2ODg0LDEyNS4xNDc4MyA3NC4zNzIwNiwtMTQxLjc0NDA3IDExOC4zMjcxOCwzNS45ODA5OSAtMzQuODg1MjEsOTkuMTE4MjgiCiAgICAgICBpZD0icGF0aDM3NzkiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgc29kaXBvZGk6bm9kZXR5cGVzPSJjY2NjYyIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjAiCiAgICAgICBkPSJtIDMxNy4yODkyNSw0NjMuNzQzNTUgMTU3LjgxNDAzLC02LjY0NDggMTIyLjIwMjU2LC0xNS4xODY0MSA1OS45NzU3NCwtODIuMjcwNjgiCiAgICAgICBpZD0icGF0aDM3ODEiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgc29kaXBvZGk6bm9kZXR5cGVzPSJjY2NjIiAvPgogICAgPHBhdGgKICAgICAgIGQ9Im0gMjkxLjgzOTY4LDI4OC4wNzcxNSBjIDAsOS4wMjc3NiAtNy4zMTg0NSwxNi4zNDYyMSAtMTYuMzQ2MjEsMTYuMzQ2MjEgLTkuMDI3NzYsMCAtMTYuMzQ2MjEsLTcuMzE4NDUgLTE2LjM0NjIxLC0xNi4zNDYyMSAwLC05LjAyNzc2IDcuMzE4NDUsLTE2LjM0NjIxIDE2LjM0NjIxLC0xNi4zNDYyMSA5LjAyNzc2LDAgMTYuMzQ2MjEsNy4zMTg0NSAxNi4zNDYyMSwxNi4zNDYyMSB6IgogICAgICAgc29kaXBvZGk6cnk9IjE2LjM0NjIxIgogICAgICAgc29kaXBvZGk6cng9IjE2LjM0NjIxIgogICAgICAgc29kaXBvZGk6Y3k9IjI4OC4wNzcxNSIKICAgICAgIHNvZGlwb2RpOmN4PSIyNzUuNDkzNDciCiAgICAgICBpZD0icGF0aDM3ODMiCiAgICAgICBzdHlsZT0iZmlsbDojZmZiMzgwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjAiCiAgICAgICBzb2RpcG9kaTp0eXBlPSJhcmMiCiAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNi40NzczMiw1NC4wNjkwOSkiIC8+CiAgICA8cGF0aAogICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDMuNTIyNjgsMTc0LjA2OTA5KSIKICAgICAgIHNvZGlwb2RpOnR5cGU9ImFyYyIKICAgICAgIHN0eWxlPSJmaWxsOiNmZmIzODA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCIKICAgICAgIGlkPSJwYXRoMzc4NSIKICAgICAgIHNvZGlwb2RpOmN4PSIyNzUuNDkzNDciCiAgICAgICBzb2RpcG9kaTpjeT0iMjg4LjA3NzE1IgogICAgICAgc29kaXBvZGk6cng9IjE2LjM0NjIxIgogICAgICAgc29kaXBvZGk6cnk9IjE2LjM0NjIxIgogICAgICAgZD0ibSAyOTEuODM5NjgsMjg4LjA3NzE1IGMgMCw5LjAyNzc2IC03LjMxODQ1LDE2LjM0NjIxIC0xNi4zNDYyMSwxNi4zNDYyMSAtOS4wMjc3NiwwIC0xNi4zNDYyMSwtNy4zMTg0NSAtMTYuMzQ2MjEsLTE2LjM0NjIxIDAsLTkuMDI3NzYgNy4zMTg0NSwtMTYuMzQ2MjEgMTYuMzQ2MjEsLTE2LjM0NjIxIDkuMDI3NzYsMCAxNi4zNDYyMSw3LjMxODQ1IDE2LjM0NjIxLDE2LjM0NjIxIHoiIC8+CiAgICA8cGF0aAogICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTk3LjUyMjY4LDE3MC4wNjkwOSkiCiAgICAgICBzb2RpcG9kaTp0eXBlPSJhcmMiCiAgICAgICBzdHlsZT0iZmlsbDojZmZiMzgwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjAiCiAgICAgICBpZD0icGF0aDM3NjUiCiAgICAgICBzb2RpcG9kaTpjeD0iMjc1LjQ5MzQ3IgogICAgICAgc29kaXBvZGk6Y3k9IjI4OC4wNzcxNSIKICAgICAgIHNvZGlwb2RpOnJ4PSIxNi4zNDYyMSIKICAgICAgIHNvZGlwb2RpOnJ5PSIxNi4zNDYyMSIKICAgICAgIGQ9Im0gMjkxLjgzOTY4LDI4OC4wNzcxNSBjIDAsOS4wMjc3NiAtNy4zMTg0NSwxNi4zNDYyMSAtMTYuMzQ2MjEsMTYuMzQ2MjEgLTkuMDI3NzYsMCAtMTYuMzQ2MjEsLTcuMzE4NDUgLTE2LjM0NjIxLC0xNi4zNDYyMSAwLC05LjAyNzc2IDcuMzE4NDUsLTE2LjM0NjIxIDE2LjM0NjIxLC0xNi4zNDYyMSA5LjAyNzc2LDAgMTYuMzQ2MjEsNy4zMTg0NSAxNi4zNDYyMSwxNi4zNDYyMSB6IiAvPgogICAgPHBhdGgKICAgICAgIGQ9Im0gMjkxLjgzOTY4LDI4OC4wNzcxNSBjIDAsOS4wMjc3NiAtNy4zMTg0NSwxNi4zNDYyMSAtMTYuMzQ2MjEsMTYuMzQ2MjEgLTkuMDI3NzYsMCAtMTYuMzQ2MjEsLTcuMzE4NDUgLTE2LjM0NjIxLC0xNi4zNDYyMSAwLC05LjAyNzc2IDcuMzE4NDUsLTE2LjM0NjIxIDE2LjM0NjIxLC0xNi4zNDYyMSA5LjAyNzc2LDAgMTYuMzQ2MjEsNy4zMTg0NSAxNi4zNDYyMSwxNi4zNDYyMSB6IgogICAgICAgc29kaXBvZGk6cnk9IjE2LjM0NjIxIgogICAgICAgc29kaXBvZGk6cng9IjE2LjM0NjIxIgogICAgICAgc29kaXBvZGk6Y3k9IjI4OC4wNzcxNSIKICAgICAgIHNvZGlwb2RpOmN4PSIyNzUuNDkzNDciCiAgICAgICBpZD0icGF0aDM3ODciCiAgICAgICBzdHlsZT0iZmlsbDojZmZiMzgwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjAiCiAgICAgICBzb2RpcG9kaTp0eXBlPSJhcmMiCiAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuNTIyNjgsNzAuMDY5MDkpIiAvPgogICAgPHBhdGgKICAgICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExOS41MjI2OCwzMi4wNjkwOSkiCiAgICAgICBzb2RpcG9kaTp0eXBlPSJhcmMiCiAgICAgICBzdHlsZT0iZmlsbDojZmZiMzgwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjAiCiAgICAgICBpZD0icGF0aDM3ODkiCiAgICAgICBzb2RpcG9kaTpjeD0iMjc1LjQ5MzQ3IgogICAgICAgc29kaXBvZGk6Y3k9IjI4OC4wNzcxNSIKICAgICAgIHNvZGlwb2RpOnJ4PSIxNi4zNDYyMSIKICAgICAgIHNvZGlwb2RpOnJ5PSIxNi4zNDYyMSIKICAgICAgIGQ9Im0gMjkxLjgzOTY4LDI4OC4wNzcxNSBjIDAsOS4wMjc3NiAtNy4zMTg0NSwxNi4zNDYyMSAtMTYuMzQ2MjEsMTYuMzQ2MjEgLTkuMDI3NzYsMCAtMTYuMzQ2MjEsLTcuMzE4NDUgLTE2LjM0NjIxLC0xNi4zNDYyMSAwLC05LjAyNzc2IDcuMzE4NDUsLTE2LjM0NjIxIDE2LjM0NjIxLC0xNi4zNDYyMSA5LjAyNzc2LDAgMTYuMzQ2MjEsNy4zMTg0NSAxNi4zNDYyMSwxNi4zNDYyMSB6IiAvPgogICAgPHBhdGgKICAgICAgIGQ9Im0gMjkxLjgzOTY4LDI4OC4wNzcxNSBjIDAsOS4wMjc3NiAtNy4zMTg0NSwxNi4zNDYyMSAtMTYuMzQ2MjEsMTYuMzQ2MjEgLTkuMDI3NzYsMCAtMTYuMzQ2MjEsLTcuMzE4NDUgLTE2LjM0NjIxLC0xNi4zNDYyMSAwLC05LjAyNzc2IDcuMzE4NDUsLTE2LjM0NjIxIDE2LjM0NjIxLC0xNi4zNDYyMSA5LjAyNzc2LDAgMTYuMzQ2MjEsNy4zMTg0NSAxNi4zNDYyMSwxNi4zNDYyMSB6IgogICAgICAgc29kaXBvZGk6cnk9IjE2LjM0NjIxIgogICAgICAgc29kaXBvZGk6cng9IjE2LjM0NjIxIgogICAgICAgc29kaXBvZGk6Y3k9IjI4OC4wNzcxNSIKICAgICAgIHNvZGlwb2RpOmN4PSIyNzUuNDkzNDciCiAgICAgICBpZD0icGF0aDM3OTEiCiAgICAgICBzdHlsZT0iZmlsbDojZmZiMzgwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjAiCiAgICAgICBzb2RpcG9kaTp0eXBlPSJhcmMiCiAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzcuNTIyNjgsLTMzLjkzMDkxKSIgLz4KICAgIDxwYXRoCiAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMjcuNTIyNjgsMTUyLjA2OTA5KSIKICAgICAgIHNvZGlwb2RpOnR5cGU9ImFyYyIKICAgICAgIHN0eWxlPSJmaWxsOiNmZmIzODA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCIKICAgICAgIGlkPSJwYXRoMzc5MyIKICAgICAgIHNvZGlwb2RpOmN4PSIyNzUuNDkzNDciCiAgICAgICBzb2RpcG9kaTpjeT0iMjg4LjA3NzE1IgogICAgICAgc29kaXBvZGk6cng9IjE2LjM0NjIxIgogICAgICAgc29kaXBvZGk6cnk9IjE2LjM0NjIxIgogICAgICAgZD0ibSAyOTEuODM5NjgsMjg4LjA3NzE1IGMgMCw5LjAyNzc2IC03LjMxODQ1LDE2LjM0NjIxIC0xNi4zNDYyMSwxNi4zNDYyMSAtOS4wMjc3NiwwIC0xNi4zNDYyMSwtNy4zMTg0NSAtMTYuMzQ2MjEsLTE2LjM0NjIxIDAsLTkuMDI3NzYgNy4zMTg0NSwtMTYuMzQ2MjEgMTYuMzQ2MjEsLTE2LjM0NjIxIDkuMDI3NzYsMCAxNi4zNDYyMSw3LjMxODQ1IDE2LjM0NjIxLDE2LjM0NjIxIHoiIC8+CiAgICA8cGF0aAogICAgICAgZD0ibSAyOTEuODM5NjgsMjg4LjA3NzE1IGMgMCw5LjAyNzc2IC03LjMxODQ1LDE2LjM0NjIxIC0xNi4zNDYyMSwxNi4zNDYyMSAtOS4wMjc3NiwwIC0xNi4zNDYyMSwtNy4zMTg0NSAtMTYuMzQ2MjEsLTE2LjM0NjIxIDAsLTkuMDI3NzYgNy4zMTg0NSwtMTYuMzQ2MjEgMTYuMzQ2MjEsLTE2LjM0NjIxIDkuMDI3NzYsMCAxNi4zNDYyMSw3LjMxODQ1IDE2LjM0NjIxLDE2LjM0NjIxIHoiCiAgICAgICBzb2RpcG9kaTpyeT0iMTYuMzQ2MjEiCiAgICAgICBzb2RpcG9kaTpyeD0iMTYuMzQ2MjEiCiAgICAgICBzb2RpcG9kaTpjeT0iMjg4LjA3NzE1IgogICAgICAgc29kaXBvZGk6Y3g9IjI3NS40OTM0NyIKICAgICAgIGlkPSJwYXRoMzc5NSIKICAgICAgIHN0eWxlPSJmaWxsOiNmZmIzODA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MCIKICAgICAgIHNvZGlwb2RpOnR5cGU9ImFyYyIKICAgICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM4Ny41MjI2OCw2NC4wNjkwOSkiIC8+CiAgICA8dGV4dAogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgICAgIHN0eWxlPSJmb250LXNpemU6MThweDtmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0Om5vcm1hbDtmb250LXN0cmV0Y2g6bm9ybWFsO3RleHQtYWxpZ246c3RhcnQ7bGluZS1oZWlnaHQ6MTI1JTt3cml0aW5nLW1vZGU6bHItdGI7dGV4dC1hbmNob3I6c3RhcnQ7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7Zm9udC1mYW1pbHk6QXJpYWw7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpBcmlhbCIKICAgICAgIHg9IjI2Mi4wMDY5OSIKICAgICAgIHk9IjM0OS4xMjA3MyIKICAgICAgIGlkPSJ0ZXh0Mzc5NyIKICAgICAgIHNvZGlwb2RpOmxpbmVzcGFjaW5nPSIxMjUlIj48dHNwYW4KICAgICAgICAgc29kaXBvZGk6cm9sZT0ibGluZSIKICAgICAgICAgaWQ9InRzcGFuMzc5OSIKICAgICAgICAgeD0iMjYyLjAwNjk5IgogICAgICAgICB5PSIzNDkuMTIwNzMiPkE8L3RzcGFuPjwvdGV4dD4KICAgIDx0ZXh0CiAgICAgICBzb2RpcG9kaTpsaW5lc3BhY2luZz0iMTI1JSIKICAgICAgIGlkPSJ0ZXh0MzgwMSIKICAgICAgIHk9IjMyNi44MzY4MiIKICAgICAgIHg9IjM4Ny43NTI1NiIKICAgICAgIHN0eWxlPSJmb250LXNpemU6MThweDtmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0Om5vcm1hbDtmb250LXN0cmV0Y2g6bm9ybWFsO3RleHQtYWxpZ246c3RhcnQ7bGluZS1oZWlnaHQ6MTI1JTt3cml0aW5nLW1vZGU6bHItdGI7dGV4dC1hbmNob3I6c3RhcnQ7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7Zm9udC1mYW1pbHk6QXJpYWw7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpBcmlhbCIKICAgICAgIHhtbDpzcGFjZT0icHJlc2VydmUiPjx0c3BhbgogICAgICAgICB5PSIzMjYuODM2ODIiCiAgICAgICAgIHg9IjM4Ny43NTI1NiIKICAgICAgICAgaWQ9InRzcGFuMzgwMyIKICAgICAgICAgc29kaXBvZGk6cm9sZT0ibGluZSI+QzwvdHNwYW4+PC90ZXh0PgogICAgPHRleHQKICAgICAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgICAgICBzdHlsZT0iZm9udC1zaXplOjE4cHg7Zm9udC1zdHlsZTpub3JtYWw7Zm9udC12YXJpYW50Om5vcm1hbDtmb250LXdlaWdodDpub3JtYWw7Zm9udC1zdHJldGNoOm5vcm1hbDt0ZXh0LWFsaWduOnN0YXJ0O2xpbmUtaGVpZ2h0OjEyNSU7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowO2ZvbnQtZmFtaWx5OkFyaWFsOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246QXJpYWwiCiAgICAgICB4PSIzMTMuNDEzMTIiCiAgICAgICB5PSI0NjguMTczNDMiCiAgICAgICBpZD0idGV4dDM4MDUiCiAgICAgICBzb2RpcG9kaTpsaW5lc3BhY2luZz0iMTI1JSI+PHRzcGFuCiAgICAgICAgIHNvZGlwb2RpOnJvbGU9ImxpbmUiCiAgICAgICAgIGlkPSJ0c3BhbjM4MDciCiAgICAgICAgIHg9IjMxMy40MTMxMiIKICAgICAgICAgeT0iNDY4LjE3MzQzIj5CPC90c3Bhbj48L3RleHQ+CiAgICA8dGV4dAogICAgICAgc29kaXBvZGk6bGluZXNwYWNpbmc9IjEyNSUiCiAgICAgICBpZD0idGV4dDM4MDkiCiAgICAgICB5PSI0NjUuMTIwNzMiCiAgICAgICB4PSI0NjguMDA2OTkiCiAgICAgICBzdHlsZT0iZm9udC1zaXplOjE4cHg7Zm9udC1zdHlsZTpub3JtYWw7Zm9udC12YXJpYW50Om5vcm1hbDtmb250LXdlaWdodDpub3JtYWw7Zm9udC1zdHJldGNoOm5vcm1hbDt0ZXh0LWFsaWduOnN0YXJ0O2xpbmUtaGVpZ2h0OjEyNSU7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowO2ZvbnQtZmFtaWx5OkFyaWFsOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246QXJpYWwiCiAgICAgICB4bWw6c3BhY2U9InByZXNlcnZlIj48dHNwYW4KICAgICAgICAgeT0iNDY1LjEyMDczIgogICAgICAgICB4PSI0NjguMDA2OTkiCiAgICAgICAgIGlkPSJ0c3BhbjM4MTEiCiAgICAgICAgIHNvZGlwb2RpOnJvbGU9ImxpbmUiPkY8L3RzcGFuPjwvdGV4dD4KICAgIDx0ZXh0CiAgICAgICB4bWw6c3BhY2U9InByZXNlcnZlIgogICAgICAgc3R5bGU9ImZvbnQtc2l6ZToxOHB4O2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1hbGlnbjpzdGFydDtsaW5lLWhlaWdodDoxMjUlO3dyaXRpbmctbW9kZTpsci10Yjt0ZXh0LWFuY2hvcjpzdGFydDtmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MDtmb250LWZhbWlseTpBcmlhbDstaW5rc2NhcGUtZm9udC1zcGVjaWZpY2F0aW9uOkFyaWFsIgogICAgICAgeD0iNTk1Ljc5MjA1IgogICAgICAgeT0iNDQ2LjU2Njk5IgogICAgICAgaWQ9InRleHQzODEzIgogICAgICAgc29kaXBvZGk6bGluZXNwYWNpbmc9IjEyNSUiPjx0c3BhbgogICAgICAgICBzb2RpcG9kaTpyb2xlPSJsaW5lIgogICAgICAgICBpZD0idHNwYW4zODE1IgogICAgICAgICB4PSI1OTUuNzkyMDUiCiAgICAgICAgIHk9IjQ0Ni41NjY5OSI+RzwvdHNwYW4+PC90ZXh0PgogICAgPHRleHQKICAgICAgIHNvZGlwb2RpOmxpbmVzcGFjaW5nPSIxMjUlIgogICAgICAgaWQ9InRleHQzODE3IgogICAgICAgeT0iMzU5LjEyMDczIgogICAgICAgeD0iNjU2LjAwNjk2IgogICAgICAgc3R5bGU9ImZvbnQtc2l6ZToxOHB4O2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1hbGlnbjpzdGFydDtsaW5lLWhlaWdodDoxMjUlO3dyaXRpbmctbW9kZTpsci10Yjt0ZXh0LWFuY2hvcjpzdGFydDtmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MDtmb250LWZhbWlseTpBcmlhbDstaW5rc2NhcGUtZm9udC1zcGVjaWZpY2F0aW9uOkFyaWFsIgogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHRzcGFuCiAgICAgICAgIHk9IjM1OS4xMjA3MyIKICAgICAgICAgeD0iNjU2LjAwNjk2IgogICAgICAgICBpZD0idHNwYW4zODE5IgogICAgICAgICBzb2RpcG9kaTpyb2xlPSJsaW5lIj5IPC90c3Bhbj48L3RleHQ+CiAgICA8dGV4dAogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgICAgIHN0eWxlPSJmb250LXNpemU6MThweDtmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0Om5vcm1hbDtmb250LXN0cmV0Y2g6bm9ybWFsO3RleHQtYWxpZ246c3RhcnQ7bGluZS1oZWlnaHQ6MTI1JTt3cml0aW5nLW1vZGU6bHItdGI7dGV4dC1hbmNob3I6c3RhcnQ7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7Zm9udC1mYW1pbHk6QXJpYWw7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpBcmlhbCIKICAgICAgIHg9IjUwMC4wMDY5NiIKICAgICAgIHk9IjM2NS4xMjA3MyIKICAgICAgIGlkPSJ0ZXh0MzgyMSIKICAgICAgIHNvZGlwb2RpOmxpbmVzcGFjaW5nPSIxMjUlIj48dHNwYW4KICAgICAgICAgc29kaXBvZGk6cm9sZT0ibGluZSIKICAgICAgICAgaWQ9InRzcGFuMzgyMyIKICAgICAgICAgeD0iNTAwLjAwNjk2IgogICAgICAgICB5PSIzNjUuMTIwNzMiPkU8L3RzcGFuPjwvdGV4dD4KICAgIDx0ZXh0CiAgICAgICBzb2RpcG9kaTpsaW5lc3BhY2luZz0iMTI1JSIKICAgICAgIGlkPSJ0ZXh0MzgyNSIKICAgICAgIHk9IjI2MS4xMjA3MyIKICAgICAgIHg9IjUwNi4wMDY5NiIKICAgICAgIHN0eWxlPSJmb250LXNpemU6MThweDtmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0Om5vcm1hbDtmb250LXN0cmV0Y2g6bm9ybWFsO3RleHQtYWxpZ246c3RhcnQ7bGluZS1oZWlnaHQ6MTI1JTt3cml0aW5nLW1vZGU6bHItdGI7dGV4dC1hbmNob3I6c3RhcnQ7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7Zm9udC1mYW1pbHk6QXJpYWw7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpBcmlhbCIKICAgICAgIHhtbDpzcGFjZT0icHJlc2VydmUiPjx0c3BhbgogICAgICAgICB5PSIyNjEuMTIwNzMiCiAgICAgICAgIHg9IjUwNi4wMDY5NiIKICAgICAgICAgaWQ9InRzcGFuMzgyNyIKICAgICAgICAgc29kaXBvZGk6cm9sZT0ibGluZSI+RDwvdHNwYW4+PC90ZXh0PgogIDwvZz4KPC9zdmc+Cg==</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>En un graf no orientat, el nombre de veïns d’un node coincideix amb el grau.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>Dos nodes són de components connexes diferents si hi ha un sol camí que els uneix.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Un graf orientat amb tres nodes pot tenir com a màxim 9 arestes, si admet arestes d'un node a ell mateix.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>Un possible <a class="reference external" href="https://ca.wikipedia.org/wiki/Cerca_en_amplada">recorregut en amplada</a> del graf de la figura començant pel node <tt class="docutils literal"><span class="pre">F</span></tt> podria ser aquest: <tt class="docutils literal"><span class="pre">F</span> <span class="pre">-</span> <span class="pre">E</span> <span class="pre">-</span> <span class="pre">B</span> <span class="pre">-</span> <span class="pre">G</span> <span class="pre">-</span> <span class="pre">H</span> <span class="pre">-</span> <span class="pre">C</span> <span class="pre">-</span> <span class="pre">D</span> <span class="pre">-</span> <span class="pre">A</span></tt>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, el vèrtex <tt>D</tt> està a més distància de <tt class="docutils literal"><span class="pre">F</span></tt> que <tt class="docutils literal"><span class="pre">A</span></tt> i per tant, hauria d’estar després en un recorregut en amplada.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 P Final</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686093  -->
+  <question type="multichoice">
+    <name>
+      <text>Iterador de paraules</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el mòdul següent:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="k">def my_iter(llista) :<br />    i = 0<br />    while True:<br />        yield llista[i]<br /></span>        i = i+1 <br />        if i == len(llista) :<br />           i  = 0<br /><br />llista = [1, 2, 3]<br />it = my_iter(llista)</pre>
+</div>
+</div>
+<p> Quines de les afirmacions següents són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>La funció <em>my_iter</em> és incorrecta perquè pretén ser un iterador i en canvi té un <em>while</em> que està prohibit</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>És perfectament normal que un iterador estigui basat en una composició iterativa amb for o while. Respecte als iteradors, no existeixen "prohibicions" més d'enllà de les condicions d'utilització d'iteradors que de vegades posem en els examens.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><tt><span style="font-family: arial,helvetica,sans-serif;"><em>it</em> és un iterador equivalent a <em>itertools.cycle(llista)</em></span><br /></tt></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p><em>it</em> és un iterador equivalent a <em>itertools.count(1, 1)</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, itertools.count(1, 1) és un iterador infinit sobre els naturals (1, 2, 3, 4, 5, ...)</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p><em>it</em> és un iterador equivalent a <em>itertools.repeat(llista,len(llista))</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, <strong>itertools.repeat(llista, len(llista))</strong> generaria 3 vegades la llista [1, 2, 3]</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Torn 2</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686081  -->
+  <question type="multichoice">
+    <name>
+      <text>Iterador progressió geomètrica</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el mòdul següent:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">pgeo</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">t</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">r</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">pgeo</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Quines de les afirmacions següents són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<tt class="docutils literal"><span class="pre">g</span></tt> és un iterador.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<tt class="docutils literal"><span class="pre">g</span></tt> és una llista.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<tt class="docutils literal"><span class="pre">g</span></tt> no és res perquè la crida a la funció <tt class="docutils literal"><span class="pre">pgeo</span></tt> no acaba.]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, malgrat que la iteració de <tt class="docutils literal"><span class="pre">pgeo</span></tt> no acaba,
+la funció generadora només executa una nova iteració
+si es crida la funció <tt class="docutils literal"><span class="pre">next</span></tt> sobre l&#8217;iterador que
+ha retornat. <tt class="docutils literal"><span class="pre">pgeo</span></tt> sempre retorna un iterador.]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[La crida <tt class="docutils literal"><span class="pre">next(g)</span></tt> no acaba.]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, retorna el següent element de l&#8217;iterador <tt class="docutils literal"><span class="pre">g</span></tt>.]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Extraordinari</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686086  -->
+  <question type="multichoice">
+    <name>
+      <text>Iterador progressió geomètrica (2)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el mòdul següent:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">pgeo</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">t</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">t</span> <span class="o">*</span> <span class="n">r</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">pgeo</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Quines de les afirmacions següents són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="50" format="html">
+      <text><![CDATA[La funció <tt class="docutils literal"><span class="pre">pgeo</span></tt> acaba sempre.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[La funció <tt class="docutils literal"><span class="pre">pgeo</span></tt> és incorrecte perquè en comptes de <tt class="docutils literal"><span class="pre">yield</span></tt>
+hauria de posar-hi <tt class="docutils literal"><span class="pre">return</span></tt>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<tt class="docutils literal"><span class="pre">g</span></tt> és iterable i per tant, es pot recòrrer usant una
+sentència <tt class="docutils literal"><span class="pre">for</span></tt>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[És possible consultar la longitud de <tt class="docutils literal"><span class="pre">g</span></tt>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Exemple</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686071  -->
+  <question type="multichoice">
+    <name>
+      <text>Iteradors i zip</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Quin és el valor de la variable <em>z</em> després d&#8217;executar el següent
+fragment de codi python?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="s">&#39;ABCDEF&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<div class="highlight-python"><div class="highlight"><pre><span class="p">[(</span><span class="s">&#39;A&#39;</span><span class="p">,</span> <span class="s">&#39;A&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;B&#39;</span><span class="p">,</span> <span class="s">&#39;B&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;C&#39;</span><span class="p">,</span> <span class="s">&#39;C&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;D&#39;</span><span class="p">,</span> <span class="s">&#39;D&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;E&#39;</span><span class="p">,</span> <span class="s">&#39;E&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;F&#39;</span><span class="p">,</span> <span class="s">&#39;F&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, perquè <tt class="docutils literal"><span class="pre">zip</span></tt> rep el mateix iterador com a
+argument dues vegades.]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<div class="highlight-python"><div class="highlight"><pre><span class="p">[(</span><span class="s">&#39;A&#39;</span><span class="p">,</span> <span class="s">&#39;B&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;C&#39;</span><span class="p">,</span> <span class="s">&#39;D&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;E&#39;</span><span class="p">,</span> <span class="s">&#39;F&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>]]></text>
+      <feedback format="html">
+        <text><![CDATA[Cert, perquè <tt class="docutils literal"><span class="pre">zip</span></tt> rep el mateix iterador com a
+argument dues vegades.]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<div class="highlight-python"><div class="highlight"><pre><span class="p">[(</span><span class="s">&#39;A&#39;</span><span class="p">,</span> <span class="s">&#39;B&#39;</span><span class="p">,</span> <span class="s">&#39;C&#39;</span><span class="p">,</span> <span class="s">&#39;D&#39;</span><span class="p">,</span> <span class="s">&#39;E&#39;</span><span class="p">,</span> <span class="s">&#39;F&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, <tt class="docutils literal"><span class="pre">zip</span></tt> genera un iterador de tuples amb tants
+components com arguments té a la crida, dos en aquest
+cas.]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[L&#8217;execució provoca un error perquè hi ha un iterador que
+s&#8217;exhaureix.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>Cap de les altres respostes és correcta</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2686070  -->
+  <question type="multichoice">
+    <name>
+      <text>La classe A i la instància b</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donada la definició de classe <tt class="docutils literal"><span class="pre">A</span></tt> i la instància <tt class="docutils literal"><span class="pre">b</span></tt> següents:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="k">class</span> <span class="nc">A</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">2</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">A</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre>
+</div>
+</div>
+<p>Quines de les afirmacions següents són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>El mètode <tt class="docutils literal"><span class="pre">__init__</span></tt> és incorrecte perquè falta la línia <tt class="docutils literal"><span class="pre">self.x</span> <span class="pre">=</span> <span class="pre">x</span></tt>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals: el mètode <tt class="docutils literal"><span class="pre">__init__</span></tt> és correcte.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>L’objecte <tt class="docutils literal"><span class="pre">b</span></tt> té un atribut <tt class="docutils literal"><span class="pre">x</span></tt>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals: només té un atribut <tt class="docutils literal"><span class="pre">y</span></tt>.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Totes les instàncies de classe <tt class="docutils literal"><span class="pre">A</span></tt> tenen un atribut <tt class="docutils literal"><span class="pre">y</span></tt>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p><tt class="docutils literal"><span class="pre">x</span></tt> és un paràmetre del mètode <tt class="docutils literal"><span class="pre">__init__</span></tt> de la classe <tt class="docutils literal"><span class="pre">A</span></tt>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Torn 1</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686075  -->
+  <question type="multichoice">
+    <name>
+      <text>La classe Expedient</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Disposem de les següents definicions de classes:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="k">class</span> <span class="nc">Expedient</span> <span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">codi</span><span class="p">)</span> <span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">codi</span> <span class="o">=</span> <span class="n">codi</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">notes</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">assig</span><span class="p">)</span> <span class="p">:</span>
+     <span class="k">if</span> <span class="n">assig</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">notes</span><span class="p">:</span>
+          <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">notes</span><span class="p">[</span><span class="n">assig</span><span class="p">]</span>
+     <span class="k">else</span><span class="p">:</span>
+          <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">assig</span><span class="p">,</span> <span class="n">nota</span><span class="p">)</span> <span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">notes</span><span class="p">[</span><span class="n">assig</span><span class="p">]</span> <span class="o">=</span> <span class="n">nota</span>
+
+<span class="k">class</span> <span class="nc">Expedient1r</span><span class="p">(</span><span class="n">Expedient</span><span class="p">)</span> <span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">codi</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">codi</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">notes</span> <span class="o">=</span> <span class="p">{</span><span class="s">'medi'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">'mates'</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s">'català'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">'castellà'</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
+</pre>
+</div>
+</div>
+<p>Indiqueu quines de les següents afirmacions són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Tota nova instància de la classe <em>Expedient</em> tindrà dos atributs, com a mínim.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>Si <em>x</em> és una instància de la classe <em>Expedient</em>, l’assignació</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">[</span><span class="s">'mates'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">20</span>
+</pre>
+</div>
+</div>
+<p>es pot realitzar gràcies a què <em>x</em> disposa del mètode <em>__getitem__</em>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, l’assignació és possible perquè <em>x</em> té el mètode <em>__setitem__</em></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>Les instàncies classe <em>Expedient1r</em> hereten els tres mètodes de <em>Expedient</em>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, <em>Expedient1r</em> redefineix el mètode <em>__init__</em>.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>Després d’executar el següent fragment de codi:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">Expedient1r</span><span class="p">(</span><span class="mi">12345</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">z</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="s">'mates'</span><span class="p">]</span>
+</pre>
+</div>
+</div>
+<p>la variable <em>z</em> valdrà -1.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, <em>z</em> valdrà 0.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2686079  -->
+  <question type="multichoice">
+    <name>
+      <text>La classe sprite A de pygame</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el mòdul següent:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pygame</span>
+
+<span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">im</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">im</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rect</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rect</span><span class="o">.</span><span class="n">center</span> <span class="o">=</span> <span class="n">c</span>
+
+<span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">A</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">Surface</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)),</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">))</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Group</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Quines de les afirmacions següents són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[La crida <tt class="docutils literal"><span class="pre">g.add(b)</span></tt> fallarà perquè l&#8217;<em>sprite</em> <tt class="docutils literal"><span class="pre">b</span></tt> no té
+mètode <tt class="docutils literal"><span class="pre">update</span></tt>.]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, l&#8217;<em>sprite</em> <tt class="docutils literal"><span class="pre">b</span></tt> té mètode <tt class="docutils literal"><span class="pre">update</span></tt> heretat
+de la classe <tt class="docutils literal"><span class="pre">Sprite</span></tt>.]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[La crida <tt class="docutils literal"><span class="pre">g.add(b)</span></tt> afegirà l&#8217;<em>sprite</em> <tt class="docutils literal"><span class="pre">b</span></tt> al grup <tt class="docutils literal"><span class="pre">g</span></tt>.]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, la crida provoca un error d&#8217;execució.]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[La crida <tt class="docutils literal"><span class="pre">g.add(b)</span></tt> fallarà perquè el mètode <tt class="docutils literal"><span class="pre">__init__</span></tt> de
+la classe <tt class="docutils literal"><span class="pre">A</span></tt> no crida al mètode <tt class="docutils literal"><span class="pre">__init__</span></tt> de la classe
+<tt class="docutils literal"><span class="pre">Sprite</span></tt>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[El mètode <tt class="docutils literal"><span class="pre">__init__</span></tt> de la classe <tt class="docutils literal"><span class="pre">A</span></tt> és incorrecte perquè
+l&#8217;atribut <tt class="docutils literal"><span class="pre">rect</span></tt> sempre ha de coincidir amb el rectangle de la
+imatge de l&#8217;atribut <tt class="docutils literal"><span class="pre">image</span></tt>.]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, l&#8217;atribut <tt class="docutils literal"><span class="pre">rect</span></tt> pot ser un rectangle
+qualsevol.]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Torn 2</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686080  -->
+  <question type="multichoice">
+    <name>
+      <text>Les classes Jugadors</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es té la següent implementació</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Jugador</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nom</span><span class="p">,</span> <span class="n">edat</span><span class="p">)</span> <span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="n">nom</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">edat</span> <span class="o">=</span>  <span class="n">edat</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">punts</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span> <span class="p">:</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">[</span><span class="n">data</span><span class="p">]</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">punts</span><span class="p">)</span> <span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">[</span><span class="n">data</span><span class="p">]</span> <span class="o">=</span> <span class="n">punts</span>
+    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">mitjana</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">m</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">:</span>
+                <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">[</span><span class="n">data</span><span class="p">]</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">n</span>
+<span class="k">class</span> <span class="nc">Jugador_Estes</span><span class="p">(</span><span class="n">Jugador</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">def</span> <span class="nf">partides_any</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">an</span><span class="p">):</span> 
+        <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span> <span class="o">==</span> <span class="n">an</span><span class="p">:</span>
+                <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span> 
+        <span class="k">return</span> <span class="n">n</span>
+<span class="k">class</span> <span class="nc">Jugador_Plus</span><span class="p">(</span><span class="n">Jugador</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nom</span><span class="p">,</span> <span class="n">edat</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">Jugador</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nom</span><span class="p">,</span> <span class="n">edat</span><span class="p">)</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">opinio</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">4</span>
+    <span class="k">def</span> <span class="nf">avaluacio</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">opinio</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>En aquest mòdul hi ha la definició de tres classes diferents. De
+les següents afirmacions indiqueu totes les que siguin
+certes. Poden ser-ho una, més d&#8217;una o cap.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[El fet que la classe <cite>Jugador_Estes</cite> no disposi de mètode
+<cite>__init__</cite> implica que tota instància de la classe <cite>Jugador</cite>
+també ho és de <cite>Jugador_Estes</cite>.]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, el fet de redefinir el mètode <cite>__init__</cite> no té
+cap relació amb l&#8217;herència i a més a més, <cite>Jugador</cite>
+és superclasse de <cite>Jugador_Estes</cite>, no subclasse.]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[Tota instància de <cite>Jugador_Plus</cite> disposa dels mètodes <cite>mitjana</cite>
+i <cite>avaluació</cite>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[Tota instància de qualsevol dels tres tipus de jugador
+(<cite>Jugador</cite>, <cite>Jugador_Estes</cite> i <cite>Jugador_Plus</cite>) té el mateix
+nombre d&#8217;atributs.]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, el mètode <cite>__init__</cite> de <cite>Jugador_Plus</cite> defineix
+l&#8217;atribut addicional <cite>opinio</cite>.]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[La funció que sobrecarrega l&#8217;operador <cite>len</cite> pot aplicar-se a
+tota instància de qualsevol dels tres tipus de jugador
+(<cite>Jugador</cite>, <cite>Jugador_Estes</cite> i <cite>Jugador_Plus</cite>)]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Extraordinari</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686085  -->
+  <question type="multichoice">
+    <name>
+      <text>Les classes Jugadors (2)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es té la següent implementació</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Jugador</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nom</span><span class="p">,</span> <span class="n">edat</span><span class="p">)</span> <span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="n">nom</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">edat</span> <span class="o">=</span>  <span class="n">edat</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">punts</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span> <span class="p">:</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">[</span><span class="n">data</span><span class="p">]</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">punts</span><span class="p">)</span> <span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">[</span><span class="n">data</span><span class="p">]</span> <span class="o">=</span> <span class="n">punts</span>
+    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">mitjana</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">m</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">:</span>
+                <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">[</span><span class="n">data</span><span class="p">]</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">n</span>
+<span class="k">class</span> <span class="nc">Jugador_Estes</span><span class="p">(</span><span class="n">Jugador</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">def</span> <span class="nf">partides_any</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">an</span><span class="p">):</span> 
+        <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">punts</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span> <span class="o">==</span> <span class="n">an</span><span class="p">:</span>
+                <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span> 
+        <span class="k">return</span> <span class="n">n</span>
+<span class="k">class</span> <span class="nc">Jugador_Plus</span><span class="p">(</span><span class="n">Jugador</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nom</span><span class="p">,</span> <span class="n">edat</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">Jugador</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nom</span><span class="p">,</span> <span class="n">edat</span><span class="p">)</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">opinio</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">4</span>
+    <span class="k">def</span> <span class="nf">avaluacio</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">opinio</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>En aquest mòdul hi ha la definició de tres classes diferents. De
+les següents afirmacions indiqueu totes les que siguin
+certes. Poden ser-ho una, més d&#8217;una o cap.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[Les instàncies de la classe <cite>Jugador_Estes</cite> no tenen mètode
+<cite>__init__</cite> i les de la classe <cite>Jugador</cite> sí.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[Les instàncies de la classe <cite>Jugador_Plus</cite> tenen tots els
+mètodes de la classe <cite>Jugador</cite>, com a mínim.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[Les instàncies de la classe <cite>Jugador_Estes</cite> no tenen atributs
+(de dades).]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[Les instàncies de la classe <cite>Jugador_Plus</cite> tenen els mateixos
+atributs (de dades) que les instàncies de la classe <cite>Jugador</cite> i a
+més l&#8217;atribut <cite>opinio</cite>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 P Final</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686092  -->
+  <question type="multichoice">
+    <name>
+      <text>Les classes Mobles</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es té la següent implementació</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="k">class</span> M<span class="nc">oble</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nom</span><span class="p">, material, preu</span><span class="p">)</span> <span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="n">nom</span>
+        <span class="bp">self</span><span class="o">.mat</span> <span class="o">=</span>  <span class="n">material<br />        self.preu = preu</span>
+ 
+<span class="k">class</span> <span class="nc">Taula</span><span class="p">(</span><span class="n">Moble</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(self, nombre_potes, preu, mat) :</span> 
+        <span class="n">super().__init__('taula', mat, preu)<br />        self.potes = nombre_potes<br /></span>  
+<span class="k">class Taula_Svenson(Taula) :</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">super()</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">4</span><span class="p">,</span> 9.99, <span class="n">'plastic'</span><span class="p">)<br />        self.mides = (1.2, 1.5)</span> <br /> <br />
+</pre>
+</div>
+</div>
+<p>En aquest mòdul hi ha la definició de tres classes diferents. De les següents afirmacions indiqueu totes les que siguin certes. Poden ser-ho una, més d’una o cap.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>La definició de les classes <em>Taula</em> i <em>Taula_Svenson</em> són incorrectes perquè passen constants de tipus <em>string</em> a la crida a <em>super </em>quan hauríen de passar variables.<em><br /></em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>És perfectament correcte que el paràmetre <em>actual</em> d'una crida sigui una constant.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Totes les instàncies a la classe <em>Taula_Svenson</em>  tenen els mateixos valors d'atributs.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Cert: nom té per valor 'taula', mat: 'plastic', preu: 9.99, potes: 4 i mides: (1.2, 1.5)</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>Tota instància a la classe Taula té 4 per valor d'atribut <em>potes</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, tot depèn del valor del paràmetre <em>nombre_potes</em> que es passi en crear la instància i de si un cop creada la instància, es modifica aquest atribut.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>Una instància a la classe <em>Taula</em> no pot tenir <strong>mai</strong> l'atribut <em>mides</em> excepte si és també instància a la classe <em>Taula_Svenson</em>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals: tot just creada una instància a la classe <em>Taula</em> no té aquest atribut, però se li pot afegir un cop creada.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Torn 1</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686076  -->
+  <question type="multichoice">
+    <name>
+      <text>L'iterador ves_a_saber</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es té la següent implementació:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="k">def</span> <span class="nf">ves_a_saber</span><span class="p">(</span><span class="n">it1</span><span class="p">,</span> <span class="n">it2</span><span class="p">):</span>
+    <span class="k">yield</span> <span class="n">itertools</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="n">it1</span><span class="p">,</span> <span class="n">it2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>De les següents afirmacions indiqueu totes les que siguin
+certes. Poden ser-ho una, més de una o cap.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[El generador construït per <tt class="docutils literal"><span class="pre">ves_a_saber</span></tt> té tants elements com
+parelles podem formar tals que el primer element pertany a
+<tt class="docutils literal"><span class="pre">it1</span></tt> i el segon a <tt class="docutils literal"><span class="pre">it2</span></tt>.]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, <tt class="docutils literal"><span class="pre">ves_a_saber</span></tt> només executa un <tt class="docutils literal"><span class="pre">yield</span></tt> i
+per tant, el generador només té un element.]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[El generador que retorna <tt class="docutils literal"><span class="pre">ves_a_saber</span></tt> genera un únic element
+que és un generador.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>Si executem les setències següents</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">it1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">it2</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">ves_a_saber</span><span class="p">(</span><span class="n">it1</span><span class="p">,</span> <span class="n">it2</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><tt class="docutils literal"><span class="pre">x</span></tt> és la parella <tt class="docutils literal"><span class="pre">(1,</span> <span class="pre">'a')</span></tt>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[Canviant <tt class="docutils literal"><span class="pre">yield</span></tt> per <tt class="docutils literal"><span class="pre">return</span></tt> en el codi, obtindrem un
+generador de les parelles formades per un element de <tt class="docutils literal"><span class="pre">it1</span></tt> i
+un de <tt class="docutils literal"><span class="pre">it2</span></tt>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 P Reavaluació</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686099  -->
+  <question type="multichoice">
+    <name>
+      <text>Map i lambda</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span class="p">Donat el tros de codi següent: </span></p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="p">&gt;&gt;&gt; it = iter('abcde')<br />&gt;&gt;&gt; it2 = it<br />&gt;&gt;&gt; it3 = map(lambda x: x in 'aeiou', it)<br />&gt;&gt;&gt; it4 = map(lambda x: x in 'aeiou', it2)</span>
+</pre>
+</div>
+</div>
+<p>Suposeu que  just després, es recorre tot l'iterador it3. Quina de les següents afirmacions és correcta?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>En acabar,  <em>it</em> i<em> it2</em> generaran els mateixos elements</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Cert, no generen cap element</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p><em><em> it3 </em></em> genererà la llista:<em><em> [True, False, False, False,True]</em></em> i, si es recorre<em><em> it4, </em></em>generarà la mateixa llista.<em><em><br /></em></em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, cap del dos generen una llista</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p> Si es recorre<em> it4 </em>no es generarà cap element perquè<em> it3</em> ha esgotat els elements de<em> it,</em> i<em> it4 </em>recorre els elements de<em> it2 </em>que és un àlies de<em> it </em>i per tant, no té cap element.<em><br /></em></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p> <em><em><em>it3</em></em></em>  genera la seqüència:<em> True, False, False, False,True </em>i si es recorre<em> it4,</em> es generarà la mateixa seqüència.<em><br /></em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, it4 no genera cap element</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/Pygame</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686069  -->
+  <question type="multichoice">
+    <name>
+      <text>Pilotes i monstres</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es vol dissenyar un joc en pygame en el que van apareixen monstres de forma aleatòria en diferents indrets de la pantalla que el jugador ha de  "matar" disparant pilotes. En el mòdul pilota.py, s'ha dissenyat la classe Pilota com segueix:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="p">import pygame<br /><br />class Pilota(pygame.sprite.Sprite):<br />    def __init__(self, mides_pantalla, desp, fort): <br />        super().__init__() <br />        self.image = pygame.image.load('pilota.png')<br />        self.rect = self.image.get_rect()<br />        self.rect.center = mides_pantalla[0]/2, mides_pantalla[1]<br />        self.fort = fort<br />        self.desp = desp<br /><br />    def update(self, monstres):<br />        self.rect.move_ip(self.desp[0], self.desp[1])<br />        xocats = pygame.sprite.spritecollide(self, monstres, dokill=False)<br />        for monstre in xocats :<br />           if monstre.fort &lt; self.fort :<br />               monstres.remove(monstre)<br /></span>
+</pre>
+</div>
+</div>
+<p>Donada la instància a la classe Pilota:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre>&gt;&gt;&gt; from pilota import Pilota<br />&gt;&gt;&gt; p = Pilota((-2, -3), 10)
+</pre>
+</div>
+</div>
+<p>Quines de les afirmacions següents són certes?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>Quan <em>p</em> col.lisioni amb un monstre, aquest s'eliminarà del grup de sprites Monstres.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No, el paràmetre dokill té per valor False. Els monstres s'eliminen o no depenent del seu atribut <em>fort</em></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Només s'eliminen els monstres que xoquen amb <em>p</em> si tenen un atribut <em>fort</em> amb valor inferior a 10.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>A cada cicle del joc, el centre de p es desplaçarà de dos píxels cap a l'esquerra i 3 pixels cap amunt.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>A cada cicle del joc, el centre de p es desplaçarà de dos píxels cap a l'esquerra  i 3 pixels cap a baix</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, en pygame, l'eix y (vertical) està orientat de dalt a baix de la pantalla.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2686067  -->
+  <question type="multichoice">
+    <name>
+      <text>Pilotes i monstres (2)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es vol dissenyar un joc en pygame en el que van apareixen monstres de forma aleatòria en diferents indrets de la pantalla que el jugador ha de  "matar" disparant pilotes. En el mòdul pilota.py, s'ha dissenyat la classe Pilota com segueix:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="p">import pygame<br /><br />class Pilota(pygame.sprite.Sprite):<br />    def __init__(self, mides_pantalla, desp, fort): <br />        super().__init__() <br />        self.image = pygame.image.load('pilota.png')<br />        self.rect = self.image.get_rect()<br />        self.rect.center = mides_pantalla[0]/2, mides_pantalla[1]<br />        self.fort = fort<br />        self.desp = desp<br /><br />    def update(self, monstres):<br />        self.rect.move_ip(self.desp[0], self.desp[1])<br />        xocats = pygame.sprite.spritecollide(self, monstres, dokill=False)<br />        for monstre in xocats :<br />           if monstre.fort &lt; self.fort :<br />               monstres.remove(monstre)<br /></span>
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Quines de les afirmacions següents són correctes?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Els sprites de la classe<em> Pilota</em> poden no canviar de posició en el mètode <em>update</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No, el paràmetre dokill té per valor False. Els monstres s'eliminen o no depenent del seu atribut <em>fort</em></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>El mètode <em>update</em> donarà un error si el grup  <em>monstres</em> és buit</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>Cal que els sprites del grup <em>monstres</em> siguin de la classe <em>Pilota</em> perquè sinó no poden tenir l'atribut <em>fort</em> que es consulta en el mètode <em>update.</em></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Els rectangles dels sprites de la llista <em>xocats</em> tenen una intersecció no buida amb el rectangle de l'sprite <em>self.</em> </p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Torn 2</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686083  -->
+  <question type="multichoice">
+    <name>
+      <text>Pygame</text>
+    </name>
+    <questiontext format="html">
+      <text>Indiqueu quines de les següents afirmacions són certes:</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[En un videojoc, cal que el bucle principal s&#8217;executi com a
+mínim a 60 vegades per segon (és a dir, a 60 fps), per tal que
+l&#8217;ull humà ho percebi correctament com una animació contínua.]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, n&#8217;hi ha prou amb 24 imatges per segon.]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[Els <em>sprites</em> de pygame han de derivar-se de la classe
+<em>pygame.sprite.Sprite</em> i disposar obligatòriament de dos
+atributs: <em>image</em> i <em>rect</em>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[La classe <em>pygame.Surface</em> serveix per a emmagatzemar una
+<a class="reference external" href="https://ca.wikipedia.org/wiki/Mapa_de_bits">imatge de tipus mapa de bits</a>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[El mètode <em>move_ip</em> de la classe <em>pygame.Rect</em> donat un
+desplaçament retorna un nou rectangle traslladat segons el
+desplaçament donat.]]></text>
+      <feedback format="html">
+        <text><![CDATA[Fals, <em>move_ip</em> modifica el rectangle i no retorna
+res (bé, retorna <tt class="docutils literal"><span class="pre">None</span></tt>).]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Extraordinari</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686089  -->
+  <question type="multichoice">
+    <name>
+      <text>Pygame (2)</text>
+    </name>
+    <questiontext format="html">
+      <text>Indiqueu quines de les següents afirmacions són certes:</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[Un <em>sprite</em> només pot pertànyer a un grup.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[El mètode <em>__init__</em> de tota classe derivada de
+<a class="reference external" href="http://www.pygame.org/docs/ref/sprite.html#pygame.sprite.Sprite" title="(in Pygame v1.9.2)"><tt class="xref py py-class docutils literal"><span class="pre">pygame.sprite.Sprite</span></tt></a> ha de cridar necessàriament el
+mètode <em>__init__</em> de la classe pare.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[El mecanisme de detecció de col·lisions entre <em>sprites</em> es basa
+en el càlcul de col·lisions entre els seus rectangles associats.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[Els objectes de classe <a class="reference external" href="http://www.pygame.org/docs/ref/surface.html#pygame.Surface" title="(in Pygame v1.9.2)"><tt class="xref py py-class docutils literal"><span class="pre">pygame.Surface</span></tt></a> sempre s&#8217;han
+de carregar des de fitxers amb <a class="reference external" href="http://www.pygame.org/docs/ref/image.html#pygame.image.load" title="(in Pygame v1.9.2)"><tt class="xref py py-func docutils literal"><span class="pre">pygame.image.load()</span></tt></a>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 P Final</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686094  -->
+  <question type="multichoice">
+    <name>
+      <text>Recorreguts  d’un graf</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el graf següent:</p>
+  <div align="center" class="align-center"><img src="@@PLUGINFILE@@/graf.svg" width="50%" /></div>
+<p>Indiqueu quines de les següents afirmacions són certes:</p>]]></text>
+<file name="graf.svg" path="/" encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIKICAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPCEtLSBDcmVhdGVkIHdpdGggbWF0cGxvdGxpYiAoaHR0cDovL21hdHBsb3RsaWIub3JnLykgLS0+CjxzdmcgaGVpZ2h0PSI0MzJwdCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTc2IDQzMiIgd2lkdGg9IjU3NnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzPgogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cip7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46cm91bmQ7fQogIDwvc3R5bGU+CiA8L2RlZnM+CiA8ZyBpZD0iZmlndXJlXzEiPgogIDxnIGlkPSJwYXRjaF8xIj4KICAgPHBhdGggZD0iCk0wIDQzMgpMNTc2IDQzMgpMNTc2IDAKTDAgMAp6CiIgc3R5bGU9ImZpbGw6I2ZmZmZmZjsiLz4KICA8L2c+CiAgPGcgaWQ9ImF4ZXNfMSI+CiAgIDxnIGlkPSJMaW5lQ29sbGVjdGlvbl8xIj4KICAgIDxkZWZzPgogICAgIDxwYXRoIGQ9IgpNMzU2LjE0OSAtNjEuNzE0MwpMNDc1LjkwNyAtMTQ5LjYyNCIgaWQ9IkMwXzBfOTI0NTkzOTgyMiIvPgogICAgIDxwYXRoIGQ9IgpNMzU2LjE0OSAtNjEuNzE0MwpMMjAzLjA4NSAtODIuNzU2MiIgaWQ9IkMwXzFfMDE1ODNmYjY3MCIvPgogICAgIDxwYXRoIGQ9IgpNNDc1LjkwNyAtMTQ5LjYyNApMNDkzLjcxNCAtMjc0LjMzMSIgaWQ9IkMwXzJfOThkM2Y2NzljZSIvPgogICAgIDxwYXRoIGQ9IgpNNDc1LjkwNyAtMTQ5LjYyNApMMzA3LjY2NCAtMjA2LjM5OCIgaWQ9IkMwXzNfNzA0YTQxZjhiYiIvPgogICAgIDxwYXRoIGQ9IgpNNDkzLjcxNCAtMjc0LjMzMQpMMzY2LjU2OSAtMzQ1LjYxNCIgaWQ9IkMwXzRfMGZiNGI5MWI0MyIvPgogICAgIDxwYXRoIGQ9IgpNODIuMjg1NyAtMTY1LjcyNwpMMTQ2LjkyMiAtMjU3LjYyOSIgaWQ9IkMwXzVfNDdhYzNkYTc1OCIvPgogICAgIDxwYXRoIGQ9IgpNODIuMjg1NyAtMTY1LjcyNwpMMjAzLjA4NSAtODIuNzU2MiIgaWQ9IkMwXzZfMTAzOGQxMTE5MyIvPgogICAgIDxwYXRoIGQ9IgpNMzA3LjY2NCAtMjA2LjM5OApMMTQ2LjkyMiAtMjU3LjYyOSIgaWQ9IkMwXzdfMjAxMTVjMGI3NCIvPgogICAgIDxwYXRoIGQ9IgpNMzA3LjY2NCAtMjA2LjM5OApMMjAzLjA4NSAtODIuNzU2MiIgaWQ9IkMwXzhfYzQwMmEyMGI5MSIvPgogICAgIDxwYXRoIGQ9IgpNMzA3LjY2NCAtMjA2LjM5OApMMzY2LjU2OSAtMzQ1LjYxNCIgaWQ9IkMwXzlfMmEyZmIyMzE0YiIvPgogICAgIDxwYXRoIGQ9IgpNMjAwLjQxOSAtMzUyLjE2NQpMMTQ2LjkyMiAtMjU3LjYyOSIgaWQ9IkMwX2FfYTIyMDUxOWVhZCIvPgogICAgIDxwYXRoIGQ9IgpNMjAwLjQxOSAtMzUyLjE2NQpMMzY2LjU2OSAtMzQ1LjYxNCIgaWQ9IkMwX2JfZmU4MzU4NzQ5YSIvPgogICAgPC9kZWZzPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfMF85MjQ1OTM5ODIyIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfMV8wMTU4M2ZiNjcwIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfMl85OGQzZjY3OWNlIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfM183MDRhNDFmOGJiIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfNF8wZmI0YjkxYjQzIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfNV80N2FjM2RhNzU4IiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfNl8xMDM4ZDExMTkzIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfN18yMDExNWMwYjc0IiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfOF9jNDAyYTIwYjkxIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfOV8yYTJmYjIzMTRiIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfYV9hMjIwNTE5ZWFkIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfYl9mZTgzNTg3NDlhIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJQYXRoQ29sbGVjdGlvbl8xIj4KICAgIDxkZWZzPgogICAgIDxwYXRoIGQ9IgpNMCA4LjY2MDI1CkMyLjI5NjczIDguNjYwMjUgNC40OTk2OSA3Ljc0Nzc2IDYuMTIzNzIgNi4xMjM3MgpDNy43NDc3NiA0LjQ5OTY5IDguNjYwMjUgMi4yOTY3MyA4LjY2MDI1IDAKQzguNjYwMjUgLTIuMjk2NzMgNy43NDc3NiAtNC40OTk2OSA2LjEyMzcyIC02LjEyMzcyCkM0LjQ5OTY5IC03Ljc0Nzc2IDIuMjk2NzMgLTguNjYwMjUgMCAtOC42NjAyNQpDLTIuMjk2NzMgLTguNjYwMjUgLTQuNDk5NjkgLTcuNzQ3NzYgLTYuMTIzNzIgLTYuMTIzNzIKQy03Ljc0Nzc2IC00LjQ5OTY5IC04LjY2MDI1IC0yLjI5NjczIC04LjY2MDI1IDAKQy04LjY2MDI1IDIuMjk2NzMgLTcuNzQ3NzYgNC40OTk2OSAtNi4xMjM3MiA2LjEyMzcyCkMtNC40OTk2OSA3Ljc0Nzc2IC0yLjI5NjczIDguNjYwMjUgMCA4LjY2MDI1CnoKIiBpZD0ibWY5NjEyZDQyZGEiIHN0eWxlPSJzdHJva2U6IzAwMDAwMDsiLz4KICAgIDwvZGVmcz4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDx1c2Ugc3R5bGU9ImZpbGw6I2ZmMDAwMDtzdHJva2U6IzAwMDAwMDsiIHg9IjM1Ni4xNDkwMzc2NyIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSIzNzAuMjg1NzE0Mjg2Ii8+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDojZmYwMDAwO3N0cm9rZTojMDAwMDAwOyIgeD0iNDc1LjkwNjY0MzI2NiIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSIyODIuMzc1NzY0MDYiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSI0OTMuNzE0Mjg1NzE0IiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9IjE1Ny42Njg5MjA1MDgiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSI4Mi4yODU3MTQyODU3IiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9IjI2Ni4yNzI5OTQ5OTYiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSIzMDcuNjY0MTAxNzIzIiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9IjIyNS42MDE4NDU3NzciLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSIyMDAuNDE4NjQ1OTI4IiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9Ijc5LjgzNTIxNTAzNTUiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSIxNDYuOTIxODUxOTIxIiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9IjE3NC4zNzEzMjAwNjgiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSIzNjYuNTY4OTQ2NDc3IiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9Ijg2LjM4NjA5MzU5NjMiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSIyMDMuMDg0NjcyOTQ4IiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9IjM0OS4yNDM4MjgzNDQiLz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF8xIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDwhLS0gRiAtLT4KICAgICA8ZGVmcz4KICAgICAgPHBhdGggZD0iCk05LjgxMjUgNzIuOTA2MgpMNTEuNzAzMSA3Mi45MDYyCkw1MS43MDMxIDY0LjU5MzgKTDE5LjY3MTkgNjQuNTkzOApMMTkuNjcxOSA0My4xMDk0Ckw0OC41NzgxIDQzLjEwOTQKTDQ4LjU3ODEgMzQuODEyNQpMMTkuNjcxOSAzNC44MTI1CkwxOS42NzE5IDAKTDkuODEyNSAwCnoKIiBpZD0iRGVqYVZ1U2Fucy00NiIvPgogICAgIDwvZGVmcz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NzMuMzkzMjA1NzY2IDI4NS42ODcwMTQwNilzY2FsZSgwLjEyIC0wLjEyKSI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNDYiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfMiI+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8IS0tIEMgLS0+CiAgICAgPGRlZnM+CiAgICAgIDxwYXRoIGQ9IgpNNjQuNDA2MiA2Ny4yODEyCkw2NC40MDYyIDU2Ljg5MDYKUTU5LjQyMTkgNjEuNTMxMiA1My43ODEyIDYzLjgxMjUKUTQ4LjE0MDYgNjYuMTA5NCA0MS43OTY5IDY2LjEwOTQKUTI5LjI5NjkgNjYuMTA5NCAyMi42NTYyIDU4LjQ2ODgKUTE2LjAxNTYgNTAuODI4MSAxNi4wMTU2IDM2LjM3NQpRMTYuMDE1NiAyMS45Njg4IDIyLjY1NjIgMTQuMzI4MQpRMjkuMjk2OSA2LjY4NzUgNDEuNzk2OSA2LjY4NzUKUTQ4LjE0MDYgNi42ODc1IDUzLjc4MTIgOC45ODQzOApRNTkuNDIxOSAxMS4yODEyIDY0LjQwNjIgMTUuOTIxOQpMNjQuNDA2MiA1LjYwOTM4ClE1OS4yMzQ0IDIuMDkzNzUgNTMuNDM3NSAwLjMyODEyNQpRNDcuNjU2MiAtMS40MjE4OCA0MS4yMTg4IC0xLjQyMTg4ClEyNC42NTYyIC0xLjQyMTg4IDE1LjEyNSA4LjcwMzEyClE1LjYwOTM4IDE4Ljg0MzggNS42MDkzOCAzNi4zNzUKUTUuNjA5MzggNTMuOTUzMSAxNS4xMjUgNjQuMDc4MQpRMjQuNjU2MiA3NC4yMTg4IDQxLjIxODggNzQuMjE4OApRNDcuNzUgNzQuMjE4OCA1My41MzEyIDcyLjQ4NDQKUTU5LjMyODEgNzAuNzUgNjQuNDA2MiA2Ny4yODEyIiBpZD0iRGVqYVZ1U2Fucy00MyIvPgogICAgIDwvZGVmcz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0OTAuMTg2NDczMjE0IDE2MC45ODAxNzA1MDgpc2NhbGUoMC4xMiAtMC4xMikiPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTQzIi8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzMiPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPCEtLSBJIC0tPgogICAgIDxkZWZzPgogICAgICA8cGF0aCBkPSIKTTkuODEyNSA3Mi45MDYyCkwxOS42NzE5IDcyLjkwNjIKTDE5LjY3MTkgMApMOS44MTI1IDAKegoiIGlkPSJEZWphVnVTYW5zLTQ5Ii8+CiAgICAgPC9kZWZzPgogICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1NS41NTc0NzUxNyAzNzMuNTk2OTY0Mjg2KXNjYWxlKDAuMTIgLTAuMTIpIj4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy00OSIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF80Ij4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDwhLS0gRSAtLT4KICAgICA8ZGVmcz4KICAgICAgPHBhdGggZD0iCk05LjgxMjUgNzIuOTA2MgpMNTUuOTA2MiA3Mi45MDYyCkw1NS45MDYyIDY0LjU5MzgKTDE5LjY3MTkgNjQuNTkzOApMMTkuNjcxOSA0My4wMTU2Ckw1NC4zOTA2IDQzLjAxNTYKTDU0LjM5MDYgMzQuNzE4OApMMTkuNjcxOSAzNC43MTg4CkwxOS42NzE5IDguMjk2ODgKTDU2Ljc4MTIgOC4yOTY4OApMNTYuNzgxMiAwCkw5LjgxMjUgMAp6CiIgaWQ9IkRlamFWdVNhbnMtNDUiLz4KICAgICA8L2RlZnM+CiAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzA0Ljg0NTk3NjcyMyAyMjguOTEzMDk1Nzc3KXNjYWxlKDAuMTIgLTAuMTIpIj4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy00NSIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF81Ij4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDwhLS0gQSAtLT4KICAgICA8ZGVmcz4KICAgICAgPHBhdGggZD0iCk0zNC4xODc1IDYzLjE4NzUKTDIwLjc5NjkgMjYuOTA2MgpMNDcuNjA5NCAyNi45MDYyCnoKCk0yOC42MDk0IDcyLjkwNjIKTDM5Ljc5NjkgNzIuOTA2MgpMNjcuNTc4MSAwCkw1Ny4zMjgxIDAKTDUwLjY4NzUgMTguNzAzMQpMMTcuODI4MSAxOC43MDMxCkwxMS4xODc1IDAKTDAuNzgxMjUgMAp6CiIgaWQ9IkRlamFWdVNhbnMtNDEiLz4KICAgICA8L2RlZnM+CiAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTk2LjQxMDgzMzQyOCA4My4xNDY0NjUwMzU1KXNjYWxlKDAuMTIgLTAuMTIpIj4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy00MSIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF82Ij4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDwhLS0gRCAtLT4KICAgICA8ZGVmcz4KICAgICAgPHBhdGggZD0iCk0xOS42NzE5IDY0Ljc5NjkKTDE5LjY3MTkgOC4xMDkzOApMMzEuNTkzOCA4LjEwOTM4ClE0Ni42ODc1IDguMTA5MzggNTMuNjg3NSAxNC45Mzc1ClE2MC42ODc1IDIxLjc4MTIgNjAuNjg3NSAzNi41MzEyClE2MC42ODc1IDUxLjE3MTkgNTMuNjg3NSA1Ny45ODQ0ClE0Ni42ODc1IDY0Ljc5NjkgMzEuNTkzOCA2NC43OTY5CnoKCk05LjgxMjUgNzIuOTA2MgpMMzAuMDc4MSA3Mi45MDYyClE1MS4yNjU2IDcyLjkwNjIgNjEuMTcxOSA2NC4wOTM4ClE3MS4wOTM4IDU1LjI4MTIgNzEuMDkzOCAzNi41MzEyClE3MS4wOTM4IDE3LjY3MTkgNjEuMTI1IDguODI4MTIKUTUxLjE3MTkgMCAzMC4wNzgxIDAKTDkuODEyNSAwCnoKIiBpZD0iRGVqYVZ1U2Fucy00NCIvPgogICAgIDwvZGVmcz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDMuMjQ0OTc2OTIxIDE3Ny42ODI1NzAwNjgpc2NhbGUoMC4xMiAtMC4xMikiPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTQ0Ii8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzciPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPCEtLSBCIC0tPgogICAgIDxkZWZzPgogICAgICA8cGF0aCBkPSIKTTE5LjY3MTkgMzQuODEyNQpMMTkuNjcxOSA4LjEwOTM4CkwzNS41IDguMTA5MzgKUTQzLjQ1MzEgOC4xMDkzOCA0Ny4yODEyIDExLjQwNjIKUTUxLjEyNSAxNC43MDMxIDUxLjEyNSAyMS40ODQ0ClE1MS4xMjUgMjguMzI4MSA0Ny4yODEyIDMxLjU2MjUKUTQzLjQ1MzEgMzQuODEyNSAzNS41IDM0LjgxMjUKegoKTTE5LjY3MTkgNjQuNzk2OQpMMTkuNjcxOSA0Mi44MjgxCkwzNC4yODEyIDQyLjgyODEKUTQxLjUgNDIuODI4MSA0NS4wMzEyIDQ1LjUzMTIKUTQ4LjU3ODEgNDguMjUgNDguNTc4MSA1My44MTI1ClE0OC41NzgxIDU5LjMyODEgNDUuMDMxMiA2Mi4wNjI1ClE0MS41IDY0Ljc5NjkgMzQuMjgxMiA2NC43OTY5CnoKCk05LjgxMjUgNzIuOTA2MgpMMzUuMDE1NiA3Mi45MDYyClE0Ni4yOTY5IDcyLjkwNjIgNTIuMzkwNiA2OC4yMTg4ClE1OC41IDYzLjUzMTIgNTguNSA1NC44OTA2ClE1OC41IDQ4LjE4NzUgNTUuMzc1IDQ0LjIzNDQKUTUyLjI1IDQwLjI4MTIgNDYuMTg3NSAzOS4zMTI1ClE1My40Njg4IDM3Ljc1IDU3LjUgMzIuNzgxMgpRNjEuNTMxMiAyNy44MjgxIDYxLjUzMTIgMjAuNDA2MgpRNjEuNTMxMiAxMC42NDA2IDU0Ljg5MDYgNS4zMTI1ClE0OC4yNSAwIDM1Ljk4NDQgMApMOS44MTI1IDAKegoiIGlkPSJEZWphVnVTYW5zLTQyIi8+CiAgICAgPC9kZWZzPgogICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM2My40NjU4MjE0NzcgODkuNjk3MzQzNTk2MylzY2FsZSgwLjEyIC0wLjEyKSI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNDIiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfOCI+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8IS0tIEcgLS0+CiAgICAgPGRlZnM+CiAgICAgIDxwYXRoIGQ9IgpNNTkuNTE1NiAxMC40MDYyCkw1OS41MTU2IDI5Ljk4NDQKTDQzLjQwNjIgMjkuOTg0NApMNDMuNDA2MiAzOC4wOTM4Ckw2OS4yODEyIDM4LjA5MzgKTDY5LjI4MTIgNi43ODEyNQpRNjMuNTc4MSAyLjczNDM4IDU2LjY4NzUgMC42NTYyNQpRNDkuODEyNSAtMS40MjE4OCA0MiAtMS40MjE4OApRMjQuOTA2MiAtMS40MjE4OCAxNS4yNSA4LjU2MjUKUTUuNjA5MzggMTguNTYyNSA1LjYwOTM4IDM2LjM3NQpRNS42MDkzOCA1NC4yNSAxNS4yNSA2NC4yMzQ0ClEyNC45MDYyIDc0LjIxODggNDIgNzQuMjE4OApRNDkuMTI1IDc0LjIxODggNTUuNTQ2OSA3Mi40NTMxClE2MS45Njg4IDcwLjcwMzEgNjcuMzkwNiA2Ny4yODEyCkw2Ny4zOTA2IDU2Ljc4MTIKUTYxLjkyMTkgNjEuNDIxOSA1NS43NjU2IDYzLjc2NTYKUTQ5LjYwOTQgNjYuMTA5NCA0Mi44MjgxIDY2LjEwOTQKUTI5LjQzNzUgNjYuMTA5NCAyMi43MTg4IDU4LjY0MDYKUTE2LjAxNTYgNTEuMTcxOSAxNi4wMTU2IDM2LjM3NQpRMTYuMDE1NiAyMS42MjUgMjIuNzE4OCAxNC4xNTYyClEyOS40Mzc1IDYuNjg3NSA0Mi44MjgxIDYuNjg3NQpRNDguMDQ2OSA2LjY4NzUgNTIuMTQwNiA3LjU5Mzc1ClE1Ni4yNSA4LjUgNTkuNTE1NiAxMC40MDYyIiBpZD0iRGVqYVZ1U2Fucy00NyIvPgogICAgIDwvZGVmcz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3OC40NjU0MDE3ODU3IDI2OS41ODQyNDQ5OTYpc2NhbGUoMC4xMiAtMC4xMikiPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTQ3Ii8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzkiPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPCEtLSBIIC0tPgogICAgIDxkZWZzPgogICAgICA8cGF0aCBkPSIKTTkuODEyNSA3Mi45MDYyCkwxOS42NzE5IDcyLjkwNjIKTDE5LjY3MTkgNDMuMDE1NgpMNTUuNTE1NiA0My4wMTU2Ckw1NS41MTU2IDcyLjkwNjIKTDY1LjM3NSA3Mi45MDYyCkw2NS4zNzUgMApMNTUuNTE1NiAwCkw1NS41MTU2IDM0LjcxODgKTDE5LjY3MTkgMzQuNzE4OApMMTkuNjcxOSAwCkw5LjgxMjUgMAp6CiIgaWQ9IkRlamFWdVNhbnMtNDgiLz4KICAgICA8L2RlZnM+CiAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTk5Ljc1MDkyMjk0OCAzNTIuNTU1MDc4MzQ0KXNjYWxlKDAuMTIgLTAuMTIpIj4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy00OCIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogIDwvZz4KIDwvZz4KIDxkZWZzPgogIDxjbGlwUGF0aCBpZD0icDVhNjczNDM3NDAiPgogICA8cmVjdCBoZWlnaHQ9IjQzMi4wIiB3aWR0aD0iNTc2LjAiIHg9IjAuMCIgeT0iMC4wIi8+CiAgPC9jbGlwUGF0aD4KIDwvZGVmcz4KPC9zdmc+Cg==</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[Un recorregut de nodes en amplada a partir del node <em>E</em> és <em>EBCFIHGDA</em>.]]></text>
+      <feedback format="html">
+        <text>Fals, No és un recorregut en amplada. És un recorregut en primera profunditat.</text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Un recorregut de nodes en primera profunditat a partir del node <em>E</em> és <em>EDGHIFCBA</em>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Un recorregut de nodes en amplada a partir del node <em>G</em> és <em>GDHEAIBFC</em>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Un recorregut de nodes en amplada a partir del node <em>E</em> és <em>EFBDHICAG</em>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 P Reavaluació</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686098  -->
+  <question type="multichoice">
+    <name>
+      <text>Recorreguts  d’un graf</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el graf següent:</p>
+<p><img style="vertical-align: middle;" src="@@PLUGINFILE@@/graf.svg" height="375" width="500" /></p>
+<p>Indiqueu quines de les següents afirmacions són certes:</p>]]></text>
+<file name="graf.svg" path="/" encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIKICAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPCEtLSBDcmVhdGVkIHdpdGggbWF0cGxvdGxpYiAoaHR0cDovL21hdHBsb3RsaWIub3JnLykgLS0+CjxzdmcgaGVpZ2h0PSI0MzJwdCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTc2IDQzMiIgd2lkdGg9IjU3NnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzPgogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cip7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46cm91bmQ7fQogIDwvc3R5bGU+CiA8L2RlZnM+CiA8ZyBpZD0iZmlndXJlXzEiPgogIDxnIGlkPSJwYXRjaF8xIj4KICAgPHBhdGggZD0iCk0wIDQzMgpMNTc2IDQzMgpMNTc2IDAKTDAgMAp6CiIgc3R5bGU9ImZpbGw6I2ZmZmZmZjsiLz4KICA8L2c+CiAgPGcgaWQ9ImF4ZXNfMSI+CiAgIDxnIGlkPSJMaW5lQ29sbGVjdGlvbl8xIj4KICAgIDxkZWZzPgogICAgIDxwYXRoIGQ9IgpNMzcxLjU1NyAtODYuMDQ2MgpMNDU1LjYwMyAtMTk1LjcxMSIgaWQ9IkMwXzBfNTcwNDg1NzM2NCIvPgogICAgIDxwYXRoIGQ9IgpNMzcxLjU1NyAtODYuMDQ2MgpMMjA5Ljg3NiAtNjEuNzE0MyIgaWQ9IkMwXzFfYWJkZjkyNWY5NCIvPgogICAgIDxwYXRoIGQ9IgpNNDA1LjA4MSAtMzE2LjQ1OQpMNDU1LjYwMyAtMTk1LjcxMSIgaWQ9IkMwXzJfOGQ4MmJkNzExYiIvPgogICAgIDxwYXRoIGQ9IgpNNDA1LjA4MSAtMzE2LjQ1OQpMMjU2LjY0NyAtMzcwLjI4NiIgaWQ9IkMwXzNfZjdiZmM5N2Y4NCIvPgogICAgIDxwYXRoIGQ9IgpNODIuMjg1NyAtMTIxLjg1NApMMjA5Ljg3NiAtNjEuNzE0MyIgaWQ9IkMwXzRfYzVlZTI2NWZlZSIvPgogICAgIDxwYXRoIGQ9IgpNMjU2LjY0NyAtMzcwLjI4NgpMMTE0Ljg3NiAtMzMyIiBpZD0iQzBfNV8yNWY3ZjEyOGE3Ii8+CiAgICA8L2RlZnM+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8dXNlIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7IiB4PSIwLjAiIHhsaW5rOmhyZWY9IiNDMF8wXzU3MDQ4NTczNjQiIHk9IjQzMi4wIi8+CiAgICA8L2c+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8dXNlIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7IiB4PSIwLjAiIHhsaW5rOmhyZWY9IiNDMF8xX2FiZGY5MjVmOTQiIHk9IjQzMi4wIi8+CiAgICA8L2c+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8dXNlIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7IiB4PSIwLjAiIHhsaW5rOmhyZWY9IiNDMF8yXzhkODJiZDcxMWIiIHk9IjQzMi4wIi8+CiAgICA8L2c+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8dXNlIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7IiB4PSIwLjAiIHhsaW5rOmhyZWY9IiNDMF8zX2Y3YmZjOTdmODQiIHk9IjQzMi4wIi8+CiAgICA8L2c+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8dXNlIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7IiB4PSIwLjAiIHhsaW5rOmhyZWY9IiNDMF80X2M1ZWUyNjVmZWUiIHk9IjQzMi4wIi8+CiAgICA8L2c+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8dXNlIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7IiB4PSIwLjAiIHhsaW5rOmhyZWY9IiNDMF81XzI1ZjdmMTI4YTciIHk9IjQzMi4wIi8+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9IlBhdGhDb2xsZWN0aW9uXzEiPgogICAgPGRlZnM+CiAgICAgPHBhdGggZD0iCk0wIDguNjYwMjUKQzIuMjk2NzMgOC42NjAyNSA0LjQ5OTY5IDcuNzQ3NzYgNi4xMjM3MiA2LjEyMzcyCkM3Ljc0Nzc2IDQuNDk5NjkgOC42NjAyNSAyLjI5NjczIDguNjYwMjUgMApDOC42NjAyNSAtMi4yOTY3MyA3Ljc0Nzc2IC00LjQ5OTY5IDYuMTIzNzIgLTYuMTIzNzIKQzQuNDk5NjkgLTcuNzQ3NzYgMi4yOTY3MyAtOC42NjAyNSAwIC04LjY2MDI1CkMtMi4yOTY3MyAtOC42NjAyNSAtNC40OTk2OSAtNy43NDc3NiAtNi4xMjM3MiAtNi4xMjM3MgpDLTcuNzQ3NzYgLTQuNDk5NjkgLTguNjYwMjUgLTIuMjk2NzMgLTguNjYwMjUgMApDLTguNjYwMjUgMi4yOTY3MyAtNy43NDc3NiA0LjQ5OTY5IC02LjEyMzcyIDYuMTIzNzIKQy00LjQ5OTY5IDcuNzQ3NzYgLTIuMjk2NzMgOC42NjAyNSAwIDguNjYwMjUKegoiIGlkPSJtZjk2MTJkNDJkYSIgc3R5bGU9InN0cm9rZTojMDAwMDAwOyIvPgogICAgPC9kZWZzPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDojZmYwMDAwO3N0cm9rZTojMDAwMDAwOyIgeD0iMzcxLjU1Njc0MjI0OCIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSIzNDUuOTUzNzk1MjIyIi8+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDojZmYwMDAwO3N0cm9rZTojMDAwMDAwOyIgeD0iNDA1LjA4MDY2NjkxOCIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSIxMTUuNTQxMTc3NzY0Ii8+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDojZmYwMDAwO3N0cm9rZTojMDAwMDAwOyIgeD0iODIuMjg1NzE0Mjg1NyIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSIzMTAuMTQ2MzQ5NDI2Ii8+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDojZmYwMDAwO3N0cm9rZTojMDAwMDAwOyIgeD0iMjU2LjY0NzAzMDExOSIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSI2MS43MTQyODU3MTQzIi8+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDojZmYwMDAwO3N0cm9rZTojMDAwMDAwOyIgeD0iMjA5Ljg3NTgxMDA4NiIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSIzNzAuMjg1NzE0Mjg2Ii8+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDojZmYwMDAwO3N0cm9rZTojMDAwMDAwOyIgeD0iNDU1LjYwMzIwNTcxNSIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSIyMzYuMjg4NzkzNDk3Ii8+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDojZmYwMDAwO3N0cm9rZTojMDAwMDAwOyIgeD0iMTE0Ljg3NTgzNTcwOSIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSI5OS45OTk1OTM0NTgiLz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF8xIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDwhLS0gQyAtLT4KICAgICA8ZGVmcz4KICAgICAgPHBhdGggZD0iCk02NC40MDYyIDY3LjI4MTIKTDY0LjQwNjIgNTYuODkwNgpRNTkuNDIxOSA2MS41MzEyIDUzLjc4MTIgNjMuODEyNQpRNDguMTQwNiA2Ni4xMDk0IDQxLjc5NjkgNjYuMTA5NApRMjkuMjk2OSA2Ni4xMDk0IDIyLjY1NjIgNTguNDY4OApRMTYuMDE1NiA1MC44MjgxIDE2LjAxNTYgMzYuMzc1ClExNi4wMTU2IDIxLjk2ODggMjIuNjU2MiAxNC4zMjgxClEyOS4yOTY5IDYuNjg3NSA0MS43OTY5IDYuNjg3NQpRNDguMTQwNiA2LjY4NzUgNTMuNzgxMiA4Ljk4NDM4ClE1OS40MjE5IDExLjI4MTIgNjQuNDA2MiAxNS45MjE5Ckw2NC40MDYyIDUuNjA5MzgKUTU5LjIzNDQgMi4wOTM3NSA1My40Mzc1IDAuMzI4MTI1ClE0Ny42NTYyIC0xLjQyMTg4IDQxLjIxODggLTEuNDIxODgKUTI0LjY1NjIgLTEuNDIxODggMTUuMTI1IDguNzAzMTIKUTUuNjA5MzggMTguODQzOCA1LjYwOTM4IDM2LjM3NQpRNS42MDkzOCA1My45NTMxIDE1LjEyNSA2NC4wNzgxClEyNC42NTYyIDc0LjIxODggNDEuMjE4OCA3NC4yMTg4ClE0Ny43NSA3NC4yMTg4IDUzLjUzMTIgNzIuNDg0NApRNTkuMzI4MSA3MC43NSA2NC40MDYyIDY3LjI4MTIiIGlkPSJEZWphVnVTYW5zLTQzIi8+CiAgICAgPC9kZWZzPgogICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM2OC4wMjg5Mjk3NDggMzQ5LjI2NTA0NTIyMilzY2FsZSgwLjEyIC0wLjEyKSI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNDMiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfMiI+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8IS0tIEUgLS0+CiAgICAgPGRlZnM+CiAgICAgIDxwYXRoIGQ9IgpNOS44MTI1IDcyLjkwNjIKTDU1LjkwNjIgNzIuOTA2MgpMNTUuOTA2MiA2NC41OTM4CkwxOS42NzE5IDY0LjU5MzgKTDE5LjY3MTkgNDMuMDE1NgpMNTQuMzkwNiA0My4wMTU2Ckw1NC4zOTA2IDM0LjcxODgKTDE5LjY3MTkgMzQuNzE4OApMMTkuNjcxOSA4LjI5Njg4Ckw1Ni43ODEyIDguMjk2ODgKTDU2Ljc4MTIgMApMOS44MTI1IDAKegoiIGlkPSJEZWphVnVTYW5zLTQ1Ii8+CiAgICAgPC9kZWZzPgogICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwMi4yNjI1NDE5MTggMTE4Ljg1MjQyNzc2NClzY2FsZSgwLjEyIC0wLjEyKSI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNDUiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfMyI+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8IS0tIEEgLS0+CiAgICAgPGRlZnM+CiAgICAgIDxwYXRoIGQ9IgpNMzQuMTg3NSA2My4xODc1CkwyMC43OTY5IDI2LjkwNjIKTDQ3LjYwOTQgMjYuOTA2Mgp6CgpNMjguNjA5NCA3Mi45MDYyCkwzOS43OTY5IDcyLjkwNjIKTDY3LjU3ODEgMApMNTcuMzI4MSAwCkw1MC42ODc1IDE4LjcwMzEKTDE3LjgyODEgMTguNzAzMQpMMTEuMTg3NSAwCkwwLjc4MTI1IDAKegoiIGlkPSJEZWphVnVTYW5zLTQxIi8+CiAgICAgPC9kZWZzPgogICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc4LjI3NzkwMTc4NTcgMzEzLjQ1NzU5OTQyNilzY2FsZSgwLjEyIC0wLjEyKSI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNDEiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfNCI+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8IS0tIEYgLS0+CiAgICAgPGRlZnM+CiAgICAgIDxwYXRoIGQ9IgpNOS44MTI1IDcyLjkwNjIKTDUxLjcwMzEgNzIuOTA2MgpMNTEuNzAzMSA2NC41OTM4CkwxOS42NzE5IDY0LjU5MzgKTDE5LjY3MTkgNDMuMTA5NApMNDguNTc4MSA0My4xMDk0Ckw0OC41NzgxIDM0LjgxMjUKTDE5LjY3MTkgMzQuODEyNQpMMTkuNjcxOSAwCkw5LjgxMjUgMAp6CiIgaWQ9IkRlamFWdVNhbnMtNDYiLz4KICAgICA8L2RlZnM+CiAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU0LjEzMzU5MjYxOSA2NS4wMjU1MzU3MTQzKXNjYWxlKDAuMTIgLTAuMTIpIj4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy00NiIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF81Ij4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDwhLS0gQiAtLT4KICAgICA8ZGVmcz4KICAgICAgPHBhdGggZD0iCk0xOS42NzE5IDM0LjgxMjUKTDE5LjY3MTkgOC4xMDkzOApMMzUuNSA4LjEwOTM4ClE0My40NTMxIDguMTA5MzggNDcuMjgxMiAxMS40MDYyClE1MS4xMjUgMTQuNzAzMSA1MS4xMjUgMjEuNDg0NApRNTEuMTI1IDI4LjMyODEgNDcuMjgxMiAzMS41NjI1ClE0My40NTMxIDM0LjgxMjUgMzUuNSAzNC44MTI1CnoKCk0xOS42NzE5IDY0Ljc5NjkKTDE5LjY3MTkgNDIuODI4MQpMMzQuMjgxMiA0Mi44MjgxClE0MS41IDQyLjgyODEgNDUuMDMxMiA0NS41MzEyClE0OC41NzgxIDQ4LjI1IDQ4LjU3ODEgNTMuODEyNQpRNDguNTc4MSA1OS4zMjgxIDQ1LjAzMTIgNjIuMDYyNQpRNDEuNSA2NC43OTY5IDM0LjI4MTIgNjQuNzk2OQp6CgpNOS44MTI1IDcyLjkwNjIKTDM1LjAxNTYgNzIuOTA2MgpRNDYuMjk2OSA3Mi45MDYyIDUyLjM5MDYgNjguMjE4OApRNTguNSA2My41MzEyIDU4LjUgNTQuODkwNgpRNTguNSA0OC4xODc1IDU1LjM3NSA0NC4yMzQ0ClE1Mi4yNSA0MC4yODEyIDQ2LjE4NzUgMzkuMzEyNQpRNTMuNDY4OCAzNy43NSA1Ny41IDMyLjc4MTIKUTYxLjUzMTIgMjcuODI4MSA2MS41MzEyIDIwLjQwNjIKUTYxLjUzMTIgMTAuNjQwNiA1NC44OTA2IDUuMzEyNQpRNDguMjUgMCAzNS45ODQ0IDAKTDkuODEyNSAwCnoKIiBpZD0iRGVqYVZ1U2Fucy00MiIvPgogICAgIDwvZGVmcz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDYuNzcyNjg1MDg2IDM3My41OTY5NjQyODYpc2NhbGUoMC4xMiAtMC4xMikiPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTQyIi8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzYiPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPCEtLSBEIC0tPgogICAgIDxkZWZzPgogICAgICA8cGF0aCBkPSIKTTE5LjY3MTkgNjQuNzk2OQpMMTkuNjcxOSA4LjEwOTM4CkwzMS41OTM4IDguMTA5MzgKUTQ2LjY4NzUgOC4xMDkzOCA1My42ODc1IDE0LjkzNzUKUTYwLjY4NzUgMjEuNzgxMiA2MC42ODc1IDM2LjUzMTIKUTYwLjY4NzUgNTEuMTcxOSA1My42ODc1IDU3Ljk4NDQKUTQ2LjY4NzUgNjQuNzk2OSAzMS41OTM4IDY0Ljc5NjkKegoKTTkuODEyNSA3Mi45MDYyCkwzMC4wNzgxIDcyLjkwNjIKUTUxLjI2NTYgNzIuOTA2MiA2MS4xNzE5IDY0LjA5MzgKUTcxLjA5MzggNTUuMjgxMiA3MS4wOTM4IDM2LjUzMTIKUTcxLjA5MzggMTcuNjcxOSA2MS4xMjUgOC44MjgxMgpRNTEuMTcxOSAwIDMwLjA3ODEgMApMOS44MTI1IDAKegoiIGlkPSJEZWphVnVTYW5zLTQ0Ii8+CiAgICAgPC9kZWZzPgogICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ1MS45MjYzMzA3MTUgMjM5LjYwMDA0MzQ5NylzY2FsZSgwLjEyIC0wLjEyKSI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNDQiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfNyI+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8IS0tIEcgLS0+CiAgICAgPGRlZnM+CiAgICAgIDxwYXRoIGQ9IgpNNTkuNTE1NiAxMC40MDYyCkw1OS41MTU2IDI5Ljk4NDQKTDQzLjQwNjIgMjkuOTg0NApMNDMuNDA2MiAzOC4wOTM4Ckw2OS4yODEyIDM4LjA5MzgKTDY5LjI4MTIgNi43ODEyNQpRNjMuNTc4MSAyLjczNDM4IDU2LjY4NzUgMC42NTYyNQpRNDkuODEyNSAtMS40MjE4OCA0MiAtMS40MjE4OApRMjQuOTA2MiAtMS40MjE4OCAxNS4yNSA4LjU2MjUKUTUuNjA5MzggMTguNTYyNSA1LjYwOTM4IDM2LjM3NQpRNS42MDkzOCA1NC4yNSAxNS4yNSA2NC4yMzQ0ClEyNC45MDYyIDc0LjIxODggNDIgNzQuMjE4OApRNDkuMTI1IDc0LjIxODggNTUuNTQ2OSA3Mi40NTMxClE2MS45Njg4IDcwLjcwMzEgNjcuMzkwNiA2Ny4yODEyCkw2Ny4zOTA2IDU2Ljc4MTIKUTYxLjkyMTkgNjEuNDIxOSA1NS43NjU2IDYzLjc2NTYKUTQ5LjYwOTQgNjYuMTA5NCA0Mi44MjgxIDY2LjEwOTQKUTI5LjQzNzUgNjYuMTA5NCAyMi43MTg4IDU4LjY0MDYKUTE2LjAxNTYgNTEuMTcxOSAxNi4wMTU2IDM2LjM3NQpRMTYuMDE1NiAyMS42MjUgMjIuNzE4OCAxNC4xNTYyClEyOS40Mzc1IDYuNjg3NSA0Mi44MjgxIDYuNjg3NQpRNDguMDQ2OSA2LjY4NzUgNTIuMTQwNiA3LjU5Mzc1ClE1Ni4yNSA4LjUgNTkuNTE1NiAxMC40MDYyIiBpZD0iRGVqYVZ1U2Fucy00NyIvPgogICAgIDwvZGVmcz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTEuMDU1NTIzMjA5IDEwMy4zMTA4NDM0NTgpc2NhbGUoMC4xMiAtMC4xMikiPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTQ3Ii8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgPC9nPgogPC9nPgogPGRlZnM+CiAgPGNsaXBQYXRoIGlkPSJwNWE2NzM0Mzc0MCI+CiAgIDxyZWN0IGhlaWdodD0iNDMyLjAiIHdpZHRoPSI1NzYuMCIgeD0iMC4wIiB5PSIwLjAiLz4KICA8L2NsaXBQYXRoPgogPC9kZWZzPgo8L3N2Zz4K</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>Un recorregut de nodes en amplada a partir del node <em>E</em> és <em>EFGDCBA</em>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, No és un recorregut en amplada. És un recorregut en primera profunditat.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<p>Un recorregut de nodes en primera profunditat a partir del node <em>A</em> és <em>ABCDEFG</em>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<p>Un recorregut de nodes en amplada a partir del node <em>A</em> és <em>ABCDEFG</em>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<p>Un recorregut de nodes en amplada a partir del node <em>E</em> és <em>EDFCGBA</em>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2686095  -->
+  <question type="multichoice">
+    <name>
+      <text>Recursivitat</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>La funció recursiva <em>arbre(n, x, y, a, lon)</em> retorna una llista d’arestes per dibuixar un arbre a partir d’una aresta inicial <em>(x, y, a, lon)</em>, i un enter <em>n</em>:</p>
+<p>L’enter <em>n</em> indica les vegades que una aresta es bifurca en dues arestes més</p>
+<p>Una aresta s’especifica per un punt inicial <em>x, y</em>, un angle, <em>a</em>, d’inclinació respecte l’eix <em>x</em>, i una longitud <em>lon</em>. Si n &gt; 0, des de l’altre extrem de l’aresta es bifurca en dues arestes de longitud <em>lon / 2</em>, i amb inclinacions respectivament de -45 graus i 45 graus respecte la perpendicular de l’aresta en curs.</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="k">import math<br /><br /></span>def arbre(n, x, y, a, lon):<br />    if (n == 0):<br />        r = [((x, y), a, lon)]<br />    else:<br />        ar = math.radians(a)<br />        x2 = x + math.cos(ar) * lon<br />        y2 = y + math.sin(ar) * lon<br />        b1 = arbre(n-1, x2, y2, a - 45, lon * 0.5)<br />        b2 = arbre(n-1, x2, y2, a + 45, lon * 0.5)<br />        r = [((x, y), a, lon)] + b1 + b2<br />    return r<br /><br /><br /></pre>
+</div>
+</div>
+<p>Es fa l’assignació <em>lst= arbre(2, 0, 0, 90, 10)</em>. La figura següent representa visualment les arestes de <em>lst</em> un cop avaluada l’expressió de l’assignació.</p>
+<p><img alt="figArbre" src="@@PLUGINFILE@@/arbre.svg" width="50%" /></p>
+<p>Indiqueu quina de les següents afirmacions és certa:</p>]]></text>
+<file name="arbre.svg" path="/" encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIKICAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyBoZWlnaHQ9Ijc1MiIgd2lkdGg9IjEwMDAiIHZlcnNpb249IjEuMSIgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogPGRlZnM+CiAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KKntzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjpyb3VuZDt9CiAgPC9zdHlsZT4KIDwvZGVmcz4KIDxnIHN0eWxlPSJmaWxsLW9wYWNpdHk6MS4wOyBzdHJva2U6YmxhY2s7CiAgc3Ryb2tlLXdpZHRoOjE7Ij4KICA8bGluZSB4MT0iMzc2IiB5MT0iMTAwMCIgeDI9IjM3NiIgeTI9IjM3NiIgLz4KICA8dGV4dCB4PSIzNzYiIHk9IjY4OCIgZm9udC1zaXplPSIyNCI+CiAgIHkKICA8L3RleHQ+CiAgPGxpbmUgeDE9IjM3NiIgeTE9IjM3NiIgeDI9IjU5NiIgeTI9IjE1NSIgLz4KICA8dGV4dCB4PSI0ODYiIHk9IjI2NiIgZm9udC1zaXplPSIyNCI+CiAgIHMKICA8L3RleHQ+CiAgPGxpbmUgeDE9IjU5NiIgeTE9IjE1NSIgeDI9Ijc1MiIgeTI9IjE1NSIgLz4KICA8dGV4dCB4PSI2NzQiIHk9IjE1NSIgZm9udC1zaXplPSIyNCI+CiAgIG4KICA8L3RleHQ+CiAgPGxpbmUgeDE9IjU5NiIgeTE9IjE1NSIgeDI9IjU5NiIgeTI9IjAiIC8+CiAgPHRleHQgeD0iNTk2IiB5PSI3NyIgZm9udC1zaXplPSIyNCI+CiAgIGkKICA8L3RleHQ+CiAgPGxpbmUgeDE9IjM3NiIgeTE9IjM3NiIgeDI9IjE1NSIgeTI9IjE1NSIgLz4KICA8dGV4dCB4PSIyNjYiIHk9IjI2NiIgZm9udC1zaXplPSIyNCI+CiAgIHUKICA8L3RleHQ+CiAgPGxpbmUgeDE9IjE1NSIgeTE9IjE1NSIgeDI9IjE1NSIgeTI9IjAiIC8+CiAgPHRleHQgeD0iMTU1IiB5PSI3NyIgZm9udC1zaXplPSIyNCI+CiAgIHAKICA8L3RleHQ+CiAgPGxpbmUgeDE9IjE1NSIgeTE9IjE1NSIgeDI9IjAiIHkyPSIxNTUiIC8+CiAgPHRleHQgeD0iNzciIHk9IjE1NSIgZm9udC1zaXplPSIyNCI+CiAgIHEKICA8L3RleHQ+CiA8L2c+Cjwvc3ZnPgo=</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Les arestes a la llista lst apareixen en l’ordre <em>y s u n i p q</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No. L’ordre és <em>y s n i u p q</em></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Les arestes a la llista lst apareixen en l’ordre <em>y s n i u p q</em></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Les arestes a la llista lst apareixen en l’ordre <em>n i s p q u y</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No. L’ordre és <em>y s n i u p q</em></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Les arestes a la llista lst apareixen en l’ordre <em>q p i n u s y</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>No. L’ordre és <em>y s n i u p q</em></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Torn 2</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686082  -->
+  <question type="multichoice">
+    <name>
+      <text>Recursivitat</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>De les següents afirmacions indiqueu totes les que siguin certes. Poden ser-ho una, més de una o cap.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>Per a que una funció recursiva acabi, és condició suficient i necessària que les seves dades es puguin mesurar i que cada cop siguin menors.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, no és suficient que siguin menors, cal que arribin a un cas base</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Tota funció recursiva ha de distingir entre els casos que es consideren base o trivials i la resta, als quals els hi aplicarem el cas recursiu.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>La recursivitat és una eina de programació que permet resoldre problemes que no podem resoldre amb estructures iteratives.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Tant amb recursivitat com amb iteracions es poden resoldre exactament els mateixos problemes. Val a dir que les solucions recursives acostumen a ser molt més senzilles.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Un programa recursiu és crida a ell mateix un nombre finit de vegades reduint les dades fins que arriba a dades considerades del cas base o trivial.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 P Final</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686091  -->
+  <question type="multichoice">
+    <name>
+      <text>Recursivitat</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Disposem de la següent funció recursiva:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):<br /></span>    if a &lt; b:<br /><span class="n">        s</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span><br />        <span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="n">q</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">s</span>
+</pre>
+</div>
+</div>
+<p>Indiqueu quines de les següents afirmacions són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>La funció <span class="math">\(f(a, b)\)</span> amb <span class="math">\(a\)</span> i <span class="math">\(b\)</span> com valors enters, acaba calculant una parella de valors <span class="math">\((q, r)\)</span> tals que <span class="math">\(a = b \times q + r\)</span> si <span class="math">\(a\ge 0\)</span> i <span class="math">\(b\gt 0\)</span>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>La funció <span class="math">\(f(a, b)\)</span> amb <span class="math">\(a\)</span> i <span class="math">\(b\)</span> com valors enters, acaba calculant una parella de valors <span class="math">\((q, r)\)</span> tals que <span class="math">\(a = b \times q + r\)</span> si <span class="math">\(a &gt; b\)</span> i <span class="math">\(b\ge 0\)</span>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>La funció no acaba si b és zero.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>La funció <span class="math">\(f(a, b)\)</span> amb <span class="math">\(a\)</span> i <span class="math">\(b\)</span> com valors enters, acaba calculant una parella de valors <span class="math">\((q, r)\)</span> tals que <span class="math">\(a = b \times q + r\)</span> si <span class="math">\(a &lt; b\)</span> per qualsevol valor de <span class="math">\(b\)</span>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>La funció <span class="math">\(f(a, a)\)</span> amb <span class="math">\(a\)</span> com valor enter, acaba sempre calculant la parella de valors <span class="math">\((1, 0)\).</span></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals. En valors negatius o zero, <em>f</em> no acaba.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Extraordinari</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686088  -->
+  <question type="multichoice">
+    <name>
+      <text>Recursivitat (2)</text>
+    </name>
+    <questiontext format="html">
+      <text>De les següents afirmacions indiqueu totes les que siguin
+certes. Poden ser-ho una, més de una o cap.</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-33.33333" format="html">
+      <text>Tota funció recursiva ha de tenir un i només un cas base.</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[A cada cas recursiu hi ha d&#8217;haver una crida recursiva com a
+mínim.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[A cada cas recursiu hi ha d&#8217;haver una i només una crida
+recursiva.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[La crida recursiva ha d&#8217;estar necessàriament al principi de cada
+cas recursiu.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 P Reavaluació</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686097  -->
+  <question type="multichoice">
+    <name>
+      <text>Sprite Bitxu (1)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es dona la següent definició de la classe Bitxu:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="p">import pygame<br />class Bitxu(pygame.sprite.Sprite) :<br />    def __init__(self, ima1, ima2, centre) :<br />        super().__init__()<br />        self.image = ima1<br />        self.ima_2 = ima2<br />        self.rect = pygame.Rect(centre, self.image.get_size())<br />    <br />    def update(self, grup) :<br />        xocats= pygame.sprite.spritecollide(self, grup, dokill = False)<br />        if len(xocats) != 0:<br />            self.image, self.ima_2 = self.ima_2, self.image<br /><br /><br /></span></pre>
+</div>
+</div>
+<p>Indiqueu quines de les següents afirmacions és correcta.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>La teva resposta és correcta.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>La teva resposta és parcialment correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>La teva resposta és incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>La definició de la classe és incorrecte perquè un sprite només pot tenir un sol atribut de tipus <em>pygame.Surface</em> i <em>Bitxu</em> en té dos: <em>image</em> i <em>ima_2</em>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals: qualsevol classe pot tenir els atributs que vulguem i del tipus que vulguem.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Els paràmetres <em>ima1</em> i <em>ima2</em> del mètode<em> init</em> han de ser obligatòriament de tipus <em>pygame.Surface.</em></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>Els paràmetres <em>ima1</em> i <em>ima2</em> del mètode<em> init</em> han de ser obligatòriament de tipus <em>string.</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals: han de ser de tipus pygame.Surface perquè en algun moment s'assignen a l'atribut <em>image</em> que ha de ser d'aquest tipus.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>Els paràmetres <em>ima1 i ima2 </em>del mètode<em> init</em> han de ser obligatòriament de tipus <em>pygame.image.</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals: <em>pygame.image </em>és un mòdul i no una classe o tipus.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/Pygame</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686068  -->
+  <question type="multichoice">
+    <name>
+      <text>Sprite Bitxu (2)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es dona la següent definició de la classe Bitxu:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="p">import pygame<br />class Bitxu(pygame.sprite.Sprite) :<br />    def __init__(self, ima1, ima2, centre) :<br />        super().__init__()<br />        self.image = ima1<br />        self.ima_2= ima2<br />        self.rect = pygame.Rect(centre, self.image.get_size())<br />    <br />    def update(self, grup) :<br />        xocats= pygame.sprite.spritecollide(self, grup, dokill = False)<br />        if len(xocats) != 0:<br />            self.image, self.ima_2 = self.ima_2, self.image<br /><br /><br /></span></pre>
+</div>
+</div>
+<p>Indiqueu quines de les seves afirmacions són correctes.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>La teva resposta és correcta.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>La teva resposta és parcialment correcta.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>La teva resposta és incorrecta.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>Les instàncies a la classe <em>Bitxu</em> canviaran d'aspecte a cada <em>update</em> alternant les dues imatges que s'han passat com a paràmetre del <em>init</em>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>Les instàncies a la classe <em>Bitxu</em> canviaran d'imatge a cada <em>update</em> si xoquen amb tots els sprites del grup que es passi com a paràmetre del mètode <em>update</em></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Les instàncies a la classe <em>Bitxu</em> canviaran d'imatge a cada <em>update</em> si xoquen amb com a mínim un  dels sprites del grup que es passi com a paràmetre del mètode <em>update</em></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Les instàncies a la classe <em>Bitxu</em> no canvien mai de posició en l'<em>update</em></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/Iteradors</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686066  -->
+  <question type="multichoice">
+    <name>
+      <text>tee</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span class="p">Donat el tros de codi següent: </span></p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="p">import itertools<br />def misteri1(it, n) :<br />  l = itertools.tee(it, n)<br />  return zip(l[0], l[1], l[2])<br />def misteri2(it, n) :<br />   l = itertools.product(it, repeat = n)<br />   return filter(lambda x: x[0]==x[1]==x[2], it)</span></pre>
+</div>
+</div>
+<p>Quina de les següents afirmacions és correcta?</p>
+<p> </p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p>Les funcions <em>misteri1</em> i misteri2 són equivalents i si se'ls passa els mateixos paràmetres, generen els mateixos elements sempre.</p>
+<p> </p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="p">import itertools<br />def misteri(it, n) :<br />  return itertools.tee(it, n)<br /><br /></span>l = misteri(iter('abcde'), 3)<br />m = zip(l[0], l[1], l[2])
+</pre>
+</div>
+</div>
+<p> </p>
+<p> </p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="p">def misteri(it, n) :<br />  return itertools.tee(it, n)</span>
+</pre>
+</div>
+</div>
+<p>Quina de les següents afirmacions és correcta</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Cert, no generen cap element</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p>Si s'els passa els mateixos paràmetres, les funcions<em><em> misteri1 </em></em>i<em><em> misteri2  </em></em> generen els mateixos elements sempre però no sempre en el mateix ordre.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, cap del dos generen una llista</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p> Si s'els passa els mateixos paràmetres,<em> les funcions<em><em> misteri1 </em></em>i<em><em> misteri2 </em></em></em>  generen els mateixos elements sempre que l'iterador que reben com a paràmetre no tingui cap element repetit.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>Encara que s'els hi passi els mateixos paràmetres, <em> les funcions<em><em> misteri1 </em></em>i<em><em> misteri2  </em></em></em>mai no generen els mateixos elements, excepte si l'iterador que reben com a paràmetre  no té cap element.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, it4 no genera cap element</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Torn 1</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686077  -->
+  <question type="multichoice">
+    <name>
+      <text>Treballem amb les components d'un graf</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donada una instància de la classe <a class="reference external" href="http://networkx.github.io/documentation/latest/reference/classes.graph.html#networkx.Graph" title="(in NetworkX v1.10)"><tt class="xref py py-func docutils literal"><span class="pre">networkx.Graph()</span></tt></a> de
+<a class="reference external" href="http://networkx.github.io/">networkx</a> <tt class="docutils literal"><span class="pre">g</span></tt> i les dues crides següents:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i1</span><span class="o">=</span><span class="n">nx</span><span class="o">.</span><span class="n">connected_component_subgraphs</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i2</span><span class="o">=</span><span class="n">nx</span><span class="o">.</span><span class="n">connected_components</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>De les següents afirmacions indiqueu totes les que siguin
+certes. Poden ser-ho una, més de una o cap.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<tt class="docutils literal"><span class="pre">i1</span></tt> dóna una llista de grafs, un per cada component connexa.]]></text>
+      <feedback format="html">
+        <text>Fals, les dues funcions retornen iteradors.</text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[Tant <tt class="docutils literal"><span class="pre">i1</span></tt> com <tt class="docutils literal"><span class="pre">i2</span></tt> retornen iteradors que generen tants
+elements com components connexes té <tt class="docutils literal"><span class="pre">g</span></tt>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[Els elements generats per <tt class="docutils literal"><span class="pre">i2</span></tt> permeten obtenir directament
+els grafs corresponents a cada component connexa de <tt class="docutils literal"><span class="pre">g</span></tt> (sense
+fer servir <tt class="docutils literal"><span class="pre">g</span></tt>).]]></text>
+      <feedback format="html">
+        <text>Fals, només són llistes de vèrtexs, faltarien les
+arestes per obtenir el subgrafs de les components.</text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[A partir del generador <tt class="docutils literal"><span class="pre">i1</span></tt> podem obtenir tota la informació
+del graf <tt class="docutils literal"><span class="pre">g</span></tt>, cosa que no podem fer a partir de <tt class="docutils literal"><span class="pre">i2</span></tt>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Torn 2</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686084  -->
+  <question type="multichoice">
+    <name>
+      <text>Un digraf de networkx</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el mòdul següent:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'groc'</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre>
+</div>
+</div>
+<p>Quines de les afirmacions següents són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p><tt class="docutils literal"><span class="pre">g</span></tt> és un graf dirigit amb tres vèrtexs i dos arcs.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p><tt class="docutils literal"><span class="pre">g</span></tt> és un graf dirigit amb dos vèrtexs i un arc perquè no es pot afegir un arc si abans no s’han afegit els vèrtexs origen i destinació.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, en afegir una aresta també s’afegeixen els vèrtexs que no pertanyin al graf.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>L’arc <tt class="docutils literal"><span class="pre">(3,</span> <span class="pre">1)</span></tt> té un atribut anomenat <tt class="docutils literal"><span class="pre">groc</span></tt>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, l’atribut s’anomena <tt class="docutils literal"><span class="pre">color</span></tt> i el seu valor és <tt class="docutils literal"><span class="pre">groc</span></tt>.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>En el graf <tt class="docutils literal"><span class="pre">g</span></tt> el grau de sortida (<em>out degree</em>) del vèrtex <tt class="docutils literal"><span class="pre">3</span></tt> coincideix amb el grau d’entrada (<em>in degree</em>) del vèrtex <tt class="docutils literal"><span class="pre">1</span></tt>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 T Extraordinari</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686087  -->
+  <question type="multichoice">
+    <name>
+      <text>Un graf de networkx (2)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el mòdul següent:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">networkx</span> <span class="kn">as</span> <span class="nn">nx</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;groc&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Quines de les afirmacions següents són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="50" format="html">
+      <text><![CDATA[2 és un node de <tt class="docutils literal"><span class="pre">g</span></tt>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[Tots els arcs del graf <tt class="docutils literal"><span class="pre">g</span></tt> tenen un atribut <tt class="docutils literal"><span class="pre">color</span></tt>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[Al graf <tt class="docutils literal"><span class="pre">g</span></tt> hi ha un camí amb origen el vèrtex 2 i destinació
+el vèrtex 3.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[El graf <tt class="docutils literal"><span class="pre">g</span></tt> té una component feblement connexa de tres vèrtex.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

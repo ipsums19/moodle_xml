@@ -1,0 +1,40 @@
+Preguntes
+---------
+
+.. moodle:question:: Iterador progressió geomètrica
+   :type: multichoice
+   :feedback: hola soc el feedback global
+   :single:
+
+   Donat el mòdul següent:
+   
+   .. literalinclude:: iteradors1.py
+      :language: python
+   
+   Quines de les afirmacions següents són certes:
+   
+   .. moodle:answer:: 50
+      :feedback: Cert: les funcions que contenen ``yield`` en comptes
+                 de ``return`` retornen un iterador.
+
+      ``g`` és un iterador.
+   
+   .. moodle:answer:: 0
+      :feedback: Fals: les funcions que contenen ``yield`` retornen un
+                 iterador, no una llista.
+
+      ``g`` és una llista.
+   
+   .. moodle:answer:: 0
+      :feedback: Fals: la funció ``pgeo`` acaba i retorna un iterador,
+                 per tant ``g`` és un iterador. L'iterador només
+                 calcula un nou element quan es crida el mètode
+                 ``next``.
+
+      ``g`` no és res perquè la crida a la funció ``pgeo`` no acaba.
+   
+   .. moodle:answer:: 50
+      :feedback: Cert: aquesta és una propietat dels iteradors.
+
+      La crida ``iter(g)`` retorna ``g``.
+

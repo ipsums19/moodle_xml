@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$course$/Categoria per defecte en 2013//14-01:ETSEIB-240132-CUTotal/2015//2016 P Final</text>
+
+    </category>
+  </question>
+
+<!-- question: 2686090  -->
+  <question type="multichoice">
+    <name>
+      <text>Construir una imatge</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es vol crear una instància a la classe Surface de pygame que representi la figura adjunta:</p>
+<p><img src="@@PLUGINFILE@@/dibu.png" alt="dibuix pregunta Construir una imatge" height="80" width="125" /></p>
+<p>La instància ha de ser de 125x 80, amb fons blanc pur i tres ratlles blaves de 25 d'amplada i 80 d'alçada. Es proposa el següent tros de codi per crear-la.</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre>&gt;&gt;&gt; import pygame<br />&gt;&gt;&gt; s = pygame.Surface((125, 80))<br />&gt;&gt;&gt; s.fill((255, 255, 255))<br />&gt;&gt;&gt; s1 = pygame.Surface((25, 80))<br />&gt;&gt;&gt; s1.fill((0, 0, 255))<br />&gt;&gt;&gt; s1.blit(s, (0, 0))<br />&gt;&gt;&gt; s1.blit(s, (50, 0))<br />&gt;&gt;&gt; s1.blit(s, (100, 0))
+</pre>
+</div>
+</div>
+<p>Quines de les afirmacions següents són certes?</p>]]></text>
+<file name="dibu.png" path="/" encoding="base64">iVBORw0KGgoAAAANSUhEUgAAAH0AAABQCAIAAAC70O2aAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AUfCwgI0F2UQAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAACPSURBVHja7dCBCQAgDAPB1P13rksUpHI/QAhXSWeoHltKVf5+daIXcefOXdy5izt3cecu7tzFnTt3cecu7tzFnbu4cxd37tzFnbu4cxd37uLOXdy5izt37uLOXdy5izt3cecu7ty5izt3cecu7tzFnbu4c+cu7tzFnbu4cxd37uLOXdy5cxd37uLOXdx3dQH6OgWfvImFcQAAAABJRU5ErkJggg==</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>No s'obtindrà el resultat desitjat perquè ni <em>s1</em> ni<em> s</em> són Sprites</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, no cal sprites per crear la imatge</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>No s'obtindrà el resultat esperat perquè el fons és blau i les ratlles blanques (és a dir que es veurà d'esquerra a dreta  blanc/blau/blanc/blau/blanc.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>La instància no és correcta perquè les crides a <em>blit</em> són incorrectes, cal enganxar <em>s1</em> sobre <em>s</em> i no al revés.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>La instància no és correcta perquè primer cal cridar a <em>pygame.image.load()</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, <em>pygame.image.load()</em> es crida quan hem de crear una imatge a partir d'un fitxer imatge. Aquí  no es necessita cap fitxer per crear-les.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2686093  -->
+  <question type="multichoice">
+    <name>
+      <text>Iterador de paraules</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el mòdul següent:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="k">def my_iter(llista) :<br />    i = 0<br />    while True:<br />        yield llista[i]<br /></span>        i = i+1 <br />        if i == len(llista) :<br />           i  = 0<br /><br />llista = [1, 2, 3]<br />it = my_iter(llista)</pre>
+</div>
+</div>
+<p> Quines de les afirmacions següents són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>La funció <em>my_iter</em> és incorrecta perquè pretén ser un iterador i en canvi té un <em>while</em> que està prohibit</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>És perfectament normal que un iterador estigui basat en una composició iterativa amb for o while. Respecte als iteradors, no existeixen "prohibicions" més d'enllà de les condicions d'utilització d'iteradors que de vegades posem en els examens.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p><tt><span style="font-family: arial,helvetica,sans-serif;"><em>it</em> és un iterador equivalent a <em>itertools.cycle(llista)</em></span><br /></tt></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p><em>it</em> és un iterador equivalent a <em>itertools.count(1, 1)</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, itertools.count(1, 1) és un iterador infinit sobre els naturals (1, 2, 3, 4, 5, ...)</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p><em>it</em> és un iterador equivalent a <em>itertools.repeat(llista,len(llista))</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, <strong>itertools.repeat(llista, len(llista))</strong> generaria 3 vegades la llista [1, 2, 3]</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2686092  -->
+  <question type="multichoice">
+    <name>
+      <text>Les classes Mobles</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Es té la següent implementació</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="k">class</span> M<span class="nc">oble</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nom</span><span class="p">, material, preu</span><span class="p">)</span> <span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="n">nom</span>
+        <span class="bp">self</span><span class="o">.mat</span> <span class="o">=</span>  <span class="n">material<br />        self.preu = preu</span>
+ 
+<span class="k">class</span> <span class="nc">Taula</span><span class="p">(</span><span class="n">Moble</span><span class="p">)</span> <span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(self, nombre_potes, preu, mat) :</span> 
+        <span class="n">super().__init__('taula', mat, preu)<br />        self.potes = nombre_potes<br /></span>  
+<span class="k">class Taula_Svenson(Taula) :</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="p">:</span>
+        <span class="n">super()</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">4</span><span class="p">,</span> 9.99, <span class="n">'plastic'</span><span class="p">)<br />        self.mides = (1.2, 1.5)</span> <br /> <br />
+</pre>
+</div>
+</div>
+<p>En aquest mòdul hi ha la definició de tres classes diferents. De les següents afirmacions indiqueu totes les que siguin certes. Poden ser-ho una, més d’una o cap.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>La definició de les classes <em>Taula</em> i <em>Taula_Svenson</em> són incorrectes perquè passen constants de tipus <em>string</em> a la crida a <em>super </em>quan hauríen de passar variables.<em><br /></em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>És perfectament correcte que el paràmetre <em>actual</em> d'una crida sigui una constant.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Totes les instàncies a la classe <em>Taula_Svenson</em>  tenen els mateixos valors d'atributs.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Cert: nom té per valor 'taula', mat: 'plastic', preu: 9.99, potes: 4 i mides: (1.2, 1.5)</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>Tota instància a la classe Taula té 4 per valor d'atribut <em>potes</em></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals, tot depèn del valor del paràmetre <em>nombre_potes</em> que es passi en crear la instància i de si un cop creada la instància, es modifica aquest atribut.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<p>Una instància a la classe <em>Taula</em> no pot tenir <strong>mai</strong> l'atribut <em>mides</em> excepte si és també instància a la classe <em>Taula_Svenson</em>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals: tot just creada una instància a la classe <em>Taula</em> no té aquest atribut, però se li pot afegir un cop creada.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2686094  -->
+  <question type="multichoice">
+    <name>
+      <text>Recorreguts  d’un graf</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Donat el graf següent:</p>
+  <div align="center" class="align-center"><img src="@@PLUGINFILE@@/graf.svg" width="50%" /></div>
+<p>Indiqueu quines de les següents afirmacions són certes:</p>]]></text>
+<file name="graf.svg" path="/" encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIKICAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPCEtLSBDcmVhdGVkIHdpdGggbWF0cGxvdGxpYiAoaHR0cDovL21hdHBsb3RsaWIub3JnLykgLS0+CjxzdmcgaGVpZ2h0PSI0MzJwdCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTc2IDQzMiIgd2lkdGg9IjU3NnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KIDxkZWZzPgogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cip7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46cm91bmQ7fQogIDwvc3R5bGU+CiA8L2RlZnM+CiA8ZyBpZD0iZmlndXJlXzEiPgogIDxnIGlkPSJwYXRjaF8xIj4KICAgPHBhdGggZD0iCk0wIDQzMgpMNTc2IDQzMgpMNTc2IDAKTDAgMAp6CiIgc3R5bGU9ImZpbGw6I2ZmZmZmZjsiLz4KICA8L2c+CiAgPGcgaWQ9ImF4ZXNfMSI+CiAgIDxnIGlkPSJMaW5lQ29sbGVjdGlvbl8xIj4KICAgIDxkZWZzPgogICAgIDxwYXRoIGQ9IgpNMzU2LjE0OSAtNjEuNzE0MwpMNDc1LjkwNyAtMTQ5LjYyNCIgaWQ9IkMwXzBfOTI0NTkzOTgyMiIvPgogICAgIDxwYXRoIGQ9IgpNMzU2LjE0OSAtNjEuNzE0MwpMMjAzLjA4NSAtODIuNzU2MiIgaWQ9IkMwXzFfMDE1ODNmYjY3MCIvPgogICAgIDxwYXRoIGQ9IgpNNDc1LjkwNyAtMTQ5LjYyNApMNDkzLjcxNCAtMjc0LjMzMSIgaWQ9IkMwXzJfOThkM2Y2NzljZSIvPgogICAgIDxwYXRoIGQ9IgpNNDc1LjkwNyAtMTQ5LjYyNApMMzA3LjY2NCAtMjA2LjM5OCIgaWQ9IkMwXzNfNzA0YTQxZjhiYiIvPgogICAgIDxwYXRoIGQ9IgpNNDkzLjcxNCAtMjc0LjMzMQpMMzY2LjU2OSAtMzQ1LjYxNCIgaWQ9IkMwXzRfMGZiNGI5MWI0MyIvPgogICAgIDxwYXRoIGQ9IgpNODIuMjg1NyAtMTY1LjcyNwpMMTQ2LjkyMiAtMjU3LjYyOSIgaWQ9IkMwXzVfNDdhYzNkYTc1OCIvPgogICAgIDxwYXRoIGQ9IgpNODIuMjg1NyAtMTY1LjcyNwpMMjAzLjA4NSAtODIuNzU2MiIgaWQ9IkMwXzZfMTAzOGQxMTE5MyIvPgogICAgIDxwYXRoIGQ9IgpNMzA3LjY2NCAtMjA2LjM5OApMMTQ2LjkyMiAtMjU3LjYyOSIgaWQ9IkMwXzdfMjAxMTVjMGI3NCIvPgogICAgIDxwYXRoIGQ9IgpNMzA3LjY2NCAtMjA2LjM5OApMMjAzLjA4NSAtODIuNzU2MiIgaWQ9IkMwXzhfYzQwMmEyMGI5MSIvPgogICAgIDxwYXRoIGQ9IgpNMzA3LjY2NCAtMjA2LjM5OApMMzY2LjU2OSAtMzQ1LjYxNCIgaWQ9IkMwXzlfMmEyZmIyMzE0YiIvPgogICAgIDxwYXRoIGQ9IgpNMjAwLjQxOSAtMzUyLjE2NQpMMTQ2LjkyMiAtMjU3LjYyOSIgaWQ9IkMwX2FfYTIyMDUxOWVhZCIvPgogICAgIDxwYXRoIGQ9IgpNMjAwLjQxOSAtMzUyLjE2NQpMMzY2LjU2OSAtMzQ1LjYxNCIgaWQ9IkMwX2JfZmU4MzU4NzQ5YSIvPgogICAgPC9kZWZzPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfMF85MjQ1OTM5ODIyIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfMV8wMTU4M2ZiNjcwIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfMl85OGQzZjY3OWNlIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfM183MDRhNDFmOGJiIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfNF8wZmI0YjkxYjQzIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfNV80N2FjM2RhNzU4IiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfNl8xMDM4ZDExMTkzIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfN18yMDExNWMwYjc0IiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfOF9jNDAyYTIwYjkxIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfOV8yYTJmYjIzMTRiIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfYV9hMjIwNTE5ZWFkIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwOyIgeD0iMC4wIiB4bGluazpocmVmPSIjQzBfYl9mZTgzNTg3NDlhIiB5PSI0MzIuMCIvPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJQYXRoQ29sbGVjdGlvbl8xIj4KICAgIDxkZWZzPgogICAgIDxwYXRoIGQ9IgpNMCA4LjY2MDI1CkMyLjI5NjczIDguNjYwMjUgNC40OTk2OSA3Ljc0Nzc2IDYuMTIzNzIgNi4xMjM3MgpDNy43NDc3NiA0LjQ5OTY5IDguNjYwMjUgMi4yOTY3MyA4LjY2MDI1IDAKQzguNjYwMjUgLTIuMjk2NzMgNy43NDc3NiAtNC40OTk2OSA2LjEyMzcyIC02LjEyMzcyCkM0LjQ5OTY5IC03Ljc0Nzc2IDIuMjk2NzMgLTguNjYwMjUgMCAtOC42NjAyNQpDLTIuMjk2NzMgLTguNjYwMjUgLTQuNDk5NjkgLTcuNzQ3NzYgLTYuMTIzNzIgLTYuMTIzNzIKQy03Ljc0Nzc2IC00LjQ5OTY5IC04LjY2MDI1IC0yLjI5NjczIC04LjY2MDI1IDAKQy04LjY2MDI1IDIuMjk2NzMgLTcuNzQ3NzYgNC40OTk2OSAtNi4xMjM3MiA2LjEyMzcyCkMtNC40OTk2OSA3Ljc0Nzc2IC0yLjI5NjczIDguNjYwMjUgMCA4LjY2MDI1CnoKIiBpZD0ibWY5NjEyZDQyZGEiIHN0eWxlPSJzdHJva2U6IzAwMDAwMDsiLz4KICAgIDwvZGVmcz4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDx1c2Ugc3R5bGU9ImZpbGw6I2ZmMDAwMDtzdHJva2U6IzAwMDAwMDsiIHg9IjM1Ni4xNDkwMzc2NyIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSIzNzAuMjg1NzE0Mjg2Ii8+CiAgICAgPHVzZSBzdHlsZT0iZmlsbDojZmYwMDAwO3N0cm9rZTojMDAwMDAwOyIgeD0iNDc1LjkwNjY0MzI2NiIgeGxpbms6aHJlZj0iI21mOTYxMmQ0MmRhIiB5PSIyODIuMzc1NzY0MDYiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSI0OTMuNzE0Mjg1NzE0IiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9IjE1Ny42Njg5MjA1MDgiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSI4Mi4yODU3MTQyODU3IiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9IjI2Ni4yNzI5OTQ5OTYiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSIzMDcuNjY0MTAxNzIzIiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9IjIyNS42MDE4NDU3NzciLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSIyMDAuNDE4NjQ1OTI4IiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9Ijc5LjgzNTIxNTAzNTUiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSIxNDYuOTIxODUxOTIxIiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9IjE3NC4zNzEzMjAwNjgiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSIzNjYuNTY4OTQ2NDc3IiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9Ijg2LjM4NjA5MzU5NjMiLz4KICAgICA8dXNlIHN0eWxlPSJmaWxsOiNmZjAwMDA7c3Ryb2tlOiMwMDAwMDA7IiB4PSIyMDMuMDg0NjcyOTQ4IiB4bGluazpocmVmPSIjbWY5NjEyZDQyZGEiIHk9IjM0OS4yNDM4MjgzNDQiLz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF8xIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDwhLS0gRiAtLT4KICAgICA8ZGVmcz4KICAgICAgPHBhdGggZD0iCk05LjgxMjUgNzIuOTA2MgpMNTEuNzAzMSA3Mi45MDYyCkw1MS43MDMxIDY0LjU5MzgKTDE5LjY3MTkgNjQuNTkzOApMMTkuNjcxOSA0My4xMDk0Ckw0OC41NzgxIDQzLjEwOTQKTDQ4LjU3ODEgMzQuODEyNQpMMTkuNjcxOSAzNC44MTI1CkwxOS42NzE5IDAKTDkuODEyNSAwCnoKIiBpZD0iRGVqYVZ1U2Fucy00NiIvPgogICAgIDwvZGVmcz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NzMuMzkzMjA1NzY2IDI4NS42ODcwMTQwNilzY2FsZSgwLjEyIC0wLjEyKSI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNDYiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfMiI+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8IS0tIEMgLS0+CiAgICAgPGRlZnM+CiAgICAgIDxwYXRoIGQ9IgpNNjQuNDA2MiA2Ny4yODEyCkw2NC40MDYyIDU2Ljg5MDYKUTU5LjQyMTkgNjEuNTMxMiA1My43ODEyIDYzLjgxMjUKUTQ4LjE0MDYgNjYuMTA5NCA0MS43OTY5IDY2LjEwOTQKUTI5LjI5NjkgNjYuMTA5NCAyMi42NTYyIDU4LjQ2ODgKUTE2LjAxNTYgNTAuODI4MSAxNi4wMTU2IDM2LjM3NQpRMTYuMDE1NiAyMS45Njg4IDIyLjY1NjIgMTQuMzI4MQpRMjkuMjk2OSA2LjY4NzUgNDEuNzk2OSA2LjY4NzUKUTQ4LjE0MDYgNi42ODc1IDUzLjc4MTIgOC45ODQzOApRNTkuNDIxOSAxMS4yODEyIDY0LjQwNjIgMTUuOTIxOQpMNjQuNDA2MiA1LjYwOTM4ClE1OS4yMzQ0IDIuMDkzNzUgNTMuNDM3NSAwLjMyODEyNQpRNDcuNjU2MiAtMS40MjE4OCA0MS4yMTg4IC0xLjQyMTg4ClEyNC42NTYyIC0xLjQyMTg4IDE1LjEyNSA4LjcwMzEyClE1LjYwOTM4IDE4Ljg0MzggNS42MDkzOCAzNi4zNzUKUTUuNjA5MzggNTMuOTUzMSAxNS4xMjUgNjQuMDc4MQpRMjQuNjU2MiA3NC4yMTg4IDQxLjIxODggNzQuMjE4OApRNDcuNzUgNzQuMjE4OCA1My41MzEyIDcyLjQ4NDQKUTU5LjMyODEgNzAuNzUgNjQuNDA2MiA2Ny4yODEyIiBpZD0iRGVqYVZ1U2Fucy00MyIvPgogICAgIDwvZGVmcz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0OTAuMTg2NDczMjE0IDE2MC45ODAxNzA1MDgpc2NhbGUoMC4xMiAtMC4xMikiPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTQzIi8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzMiPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPCEtLSBJIC0tPgogICAgIDxkZWZzPgogICAgICA8cGF0aCBkPSIKTTkuODEyNSA3Mi45MDYyCkwxOS42NzE5IDcyLjkwNjIKTDE5LjY3MTkgMApMOS44MTI1IDAKegoiIGlkPSJEZWphVnVTYW5zLTQ5Ii8+CiAgICAgPC9kZWZzPgogICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM1NS41NTc0NzUxNyAzNzMuNTk2OTY0Mjg2KXNjYWxlKDAuMTIgLTAuMTIpIj4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy00OSIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF80Ij4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDwhLS0gRSAtLT4KICAgICA8ZGVmcz4KICAgICAgPHBhdGggZD0iCk05LjgxMjUgNzIuOTA2MgpMNTUuOTA2MiA3Mi45MDYyCkw1NS45MDYyIDY0LjU5MzgKTDE5LjY3MTkgNjQuNTkzOApMMTkuNjcxOSA0My4wMTU2Ckw1NC4zOTA2IDQzLjAxNTYKTDU0LjM5MDYgMzQuNzE4OApMMTkuNjcxOSAzNC43MTg4CkwxOS42NzE5IDguMjk2ODgKTDU2Ljc4MTIgOC4yOTY4OApMNTYuNzgxMiAwCkw5LjgxMjUgMAp6CiIgaWQ9IkRlamFWdVNhbnMtNDUiLz4KICAgICA8L2RlZnM+CiAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzA0Ljg0NTk3NjcyMyAyMjguOTEzMDk1Nzc3KXNjYWxlKDAuMTIgLTAuMTIpIj4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy00NSIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF81Ij4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDwhLS0gQSAtLT4KICAgICA8ZGVmcz4KICAgICAgPHBhdGggZD0iCk0zNC4xODc1IDYzLjE4NzUKTDIwLjc5NjkgMjYuOTA2MgpMNDcuNjA5NCAyNi45MDYyCnoKCk0yOC42MDk0IDcyLjkwNjIKTDM5Ljc5NjkgNzIuOTA2MgpMNjcuNTc4MSAwCkw1Ny4zMjgxIDAKTDUwLjY4NzUgMTguNzAzMQpMMTcuODI4MSAxOC43MDMxCkwxMS4xODc1IDAKTDAuNzgxMjUgMAp6CiIgaWQ9IkRlamFWdVNhbnMtNDEiLz4KICAgICA8L2RlZnM+CiAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTk2LjQxMDgzMzQyOCA4My4xNDY0NjUwMzU1KXNjYWxlKDAuMTIgLTAuMTIpIj4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy00MSIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF82Ij4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwNWE2NzM0Mzc0MCkiPgogICAgIDwhLS0gRCAtLT4KICAgICA8ZGVmcz4KICAgICAgPHBhdGggZD0iCk0xOS42NzE5IDY0Ljc5NjkKTDE5LjY3MTkgOC4xMDkzOApMMzEuNTkzOCA4LjEwOTM4ClE0Ni42ODc1IDguMTA5MzggNTMuNjg3NSAxNC45Mzc1ClE2MC42ODc1IDIxLjc4MTIgNjAuNjg3NSAzNi41MzEyClE2MC42ODc1IDUxLjE3MTkgNTMuNjg3NSA1Ny45ODQ0ClE0Ni42ODc1IDY0Ljc5NjkgMzEuNTkzOCA2NC43OTY5CnoKCk05LjgxMjUgNzIuOTA2MgpMMzAuMDc4MSA3Mi45MDYyClE1MS4yNjU2IDcyLjkwNjIgNjEuMTcxOSA2NC4wOTM4ClE3MS4wOTM4IDU1LjI4MTIgNzEuMDkzOCAzNi41MzEyClE3MS4wOTM4IDE3LjY3MTkgNjEuMTI1IDguODI4MTIKUTUxLjE3MTkgMCAzMC4wNzgxIDAKTDkuODEyNSAwCnoKIiBpZD0iRGVqYVZ1U2Fucy00NCIvPgogICAgIDwvZGVmcz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDMuMjQ0OTc2OTIxIDE3Ny42ODI1NzAwNjgpc2NhbGUoMC4xMiAtMC4xMikiPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTQ0Ii8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzciPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPCEtLSBCIC0tPgogICAgIDxkZWZzPgogICAgICA8cGF0aCBkPSIKTTE5LjY3MTkgMzQuODEyNQpMMTkuNjcxOSA4LjEwOTM4CkwzNS41IDguMTA5MzgKUTQzLjQ1MzEgOC4xMDkzOCA0Ny4yODEyIDExLjQwNjIKUTUxLjEyNSAxNC43MDMxIDUxLjEyNSAyMS40ODQ0ClE1MS4xMjUgMjguMzI4MSA0Ny4yODEyIDMxLjU2MjUKUTQzLjQ1MzEgMzQuODEyNSAzNS41IDM0LjgxMjUKegoKTTE5LjY3MTkgNjQuNzk2OQpMMTkuNjcxOSA0Mi44MjgxCkwzNC4yODEyIDQyLjgyODEKUTQxLjUgNDIuODI4MSA0NS4wMzEyIDQ1LjUzMTIKUTQ4LjU3ODEgNDguMjUgNDguNTc4MSA1My44MTI1ClE0OC41NzgxIDU5LjMyODEgNDUuMDMxMiA2Mi4wNjI1ClE0MS41IDY0Ljc5NjkgMzQuMjgxMiA2NC43OTY5CnoKCk05LjgxMjUgNzIuOTA2MgpMMzUuMDE1NiA3Mi45MDYyClE0Ni4yOTY5IDcyLjkwNjIgNTIuMzkwNiA2OC4yMTg4ClE1OC41IDYzLjUzMTIgNTguNSA1NC44OTA2ClE1OC41IDQ4LjE4NzUgNTUuMzc1IDQ0LjIzNDQKUTUyLjI1IDQwLjI4MTIgNDYuMTg3NSAzOS4zMTI1ClE1My40Njg4IDM3Ljc1IDU3LjUgMzIuNzgxMgpRNjEuNTMxMiAyNy44MjgxIDYxLjUzMTIgMjAuNDA2MgpRNjEuNTMxMiAxMC42NDA2IDU0Ljg5MDYgNS4zMTI1ClE0OC4yNSAwIDM1Ljk4NDQgMApMOS44MTI1IDAKegoiIGlkPSJEZWphVnVTYW5zLTQyIi8+CiAgICAgPC9kZWZzPgogICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM2My40NjU4MjE0NzcgODkuNjk3MzQzNTk2MylzY2FsZSgwLjEyIC0wLjEyKSI+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNDIiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfOCI+CiAgICA8ZyBjbGlwLXBhdGg9InVybCgjcDVhNjczNDM3NDApIj4KICAgICA8IS0tIEcgLS0+CiAgICAgPGRlZnM+CiAgICAgIDxwYXRoIGQ9IgpNNTkuNTE1NiAxMC40MDYyCkw1OS41MTU2IDI5Ljk4NDQKTDQzLjQwNjIgMjkuOTg0NApMNDMuNDA2MiAzOC4wOTM4Ckw2OS4yODEyIDM4LjA5MzgKTDY5LjI4MTIgNi43ODEyNQpRNjMuNTc4MSAyLjczNDM4IDU2LjY4NzUgMC42NTYyNQpRNDkuODEyNSAtMS40MjE4OCA0MiAtMS40MjE4OApRMjQuOTA2MiAtMS40MjE4OCAxNS4yNSA4LjU2MjUKUTUuNjA5MzggMTguNTYyNSA1LjYwOTM4IDM2LjM3NQpRNS42MDkzOCA1NC4yNSAxNS4yNSA2NC4yMzQ0ClEyNC45MDYyIDc0LjIxODggNDIgNzQuMjE4OApRNDkuMTI1IDc0LjIxODggNTUuNTQ2OSA3Mi40NTMxClE2MS45Njg4IDcwLjcwMzEgNjcuMzkwNiA2Ny4yODEyCkw2Ny4zOTA2IDU2Ljc4MTIKUTYxLjkyMTkgNjEuNDIxOSA1NS43NjU2IDYzLjc2NTYKUTQ5LjYwOTQgNjYuMTA5NCA0Mi44MjgxIDY2LjEwOTQKUTI5LjQzNzUgNjYuMTA5NCAyMi43MTg4IDU4LjY0MDYKUTE2LjAxNTYgNTEuMTcxOSAxNi4wMTU2IDM2LjM3NQpRMTYuMDE1NiAyMS42MjUgMjIuNzE4OCAxNC4xNTYyClEyOS40Mzc1IDYuNjg3NSA0Mi44MjgxIDYuNjg3NQpRNDguMDQ2OSA2LjY4NzUgNTIuMTQwNiA3LjU5Mzc1ClE1Ni4yNSA4LjUgNTkuNTE1NiAxMC40MDYyIiBpZD0iRGVqYVZ1U2Fucy00NyIvPgogICAgIDwvZGVmcz4KICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3OC40NjU0MDE3ODU3IDI2OS41ODQyNDQ5OTYpc2NhbGUoMC4xMiAtMC4xMikiPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTQ3Ii8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzkiPgogICAgPGcgY2xpcC1wYXRoPSJ1cmwoI3A1YTY3MzQzNzQwKSI+CiAgICAgPCEtLSBIIC0tPgogICAgIDxkZWZzPgogICAgICA8cGF0aCBkPSIKTTkuODEyNSA3Mi45MDYyCkwxOS42NzE5IDcyLjkwNjIKTDE5LjY3MTkgNDMuMDE1NgpMNTUuNTE1NiA0My4wMTU2Ckw1NS41MTU2IDcyLjkwNjIKTDY1LjM3NSA3Mi45MDYyCkw2NS4zNzUgMApMNTUuNTE1NiAwCkw1NS41MTU2IDM0LjcxODgKTDE5LjY3MTkgMzQuNzE4OApMMTkuNjcxOSAwCkw5LjgxMjUgMAp6CiIgaWQ9IkRlamFWdVNhbnMtNDgiLz4KICAgICA8L2RlZnM+CiAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTk5Ljc1MDkyMjk0OCAzNTIuNTU1MDc4MzQ0KXNjYWxlKDAuMTIgLTAuMTIpIj4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy00OCIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogIDwvZz4KIDwvZz4KIDxkZWZzPgogIDxjbGlwUGF0aCBpZD0icDVhNjczNDM3NDAiPgogICA8cmVjdCBoZWlnaHQ9IjQzMi4wIiB3aWR0aD0iNTc2LjAiIHg9IjAuMCIgeT0iMC4wIi8+CiAgPC9jbGlwUGF0aD4KIDwvZGVmcz4KPC9zdmc+Cg==</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[Un recorregut de nodes en amplada a partir del node <em>E</em> és <em>EBCFIHGDA</em>.]]></text>
+      <feedback format="html">
+        <text>Fals, No és un recorregut en amplada. És un recorregut en primera profunditat.</text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Un recorregut de nodes en primera profunditat a partir del node <em>E</em> és <em>EDGHIFCBA</em>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Un recorregut de nodes en amplada a partir del node <em>G</em> és <em>GDHEAIBFC</em>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Un recorregut de nodes en amplada a partir del node <em>E</em> és <em>EFBDHICAG</em>.]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2686091  -->
+  <question type="multichoice">
+    <name>
+      <text>Recursivitat</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Disposem de la següent funció recursiva:</p>
+<div class="highlight-python">
+<div class="highlight">
+<pre><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):<br /></span>    if a &lt; b:<br /><span class="n">        s</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span><br />        <span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="n">q</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">s</span>
+</pre>
+</div>
+</div>
+<p>Indiqueu quines de les següents afirmacions són certes:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>123</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>La funció <span class="math">\(f(a, b)\)</span> amb <span class="math">\(a\)</span> i <span class="math">\(b\)</span> com valors enters, acaba calculant una parella de valors <span class="math">\((q, r)\)</span> tals que <span class="math">\(a = b \times q + r\)</span> si <span class="math">\(a\ge 0\)</span> i <span class="math">\(b\gt 0\)</span>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>La funció <span class="math">\(f(a, b)\)</span> amb <span class="math">\(a\)</span> i <span class="math">\(b\)</span> com valors enters, acaba calculant una parella de valors <span class="math">\((q, r)\)</span> tals que <span class="math">\(a = b \times q + r\)</span> si <span class="math">\(a &gt; b\)</span> i <span class="math">\(b\ge 0\)</span>.</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>La funció no acaba si b és zero.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>La funció <span class="math">\(f(a, b)\)</span> amb <span class="math">\(a\)</span> i <span class="math">\(b\)</span> com valors enters, acaba calculant una parella de valors <span class="math">\((q, r)\)</span> tals que <span class="math">\(a = b \times q + r\)</span> si <span class="math">\(a &lt; b\)</span> per qualsevol valor de <span class="math">\(b\)</span>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<p>La funció <span class="math">\(f(a, a)\)</span> amb <span class="math">\(a\)</span> com valor enter, acaba sempre calculant la parella de valors <span class="math">\((1, 0)\).</span></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Fals. En valors negatius o zero, <em>f</em> no acaba.</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>
